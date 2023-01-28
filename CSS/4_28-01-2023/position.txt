@@ -1,0 +1,15 @@
+position
+
+position : static; >- default value
+position : fixed:
+position : sticky;
+position : absolute;
+position : relative;
+
+(this Property only used with position rather than static)
+
+top:
+left:
+right:
+bottom:
+z-index:

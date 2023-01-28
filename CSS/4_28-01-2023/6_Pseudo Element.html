@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: auto;
+            width: 300px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 50px auto;
+            text-align: justify;
+        }
+        div::before{
+            content: "Hello";
+            /* color: blue; */
+        }
+        div::after{
+            content: "World";
+            color: tomato;
+        }
+        div::first-letter{
+            font-size: 50px;
+        }
+        div::first-line{
+            color: red;
+        }
+        div::selection{
+            color: blueviolet;
+            background-color: tomato;
+        }
+        li::marker{
+            color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laudantium sapiente corrupti deserunt eius, eligendi harum veritatis necessitatibus vitae delectus numquam temporibus odit illo repudiandae voluptate nostrum quasi eum, placeat nesciunt fuga? Earum, porro animi. Officia ut saepe error magni adipisci nesciunt nam repudiandae velit alias expedita. Assumenda omnis nihil, quis saepe dolorum maxime ipsa dignissimos dolores mollitia debitis non quod officia iure ab ullam quasi itaque. Repellendus, aperiam. Animi, corporis iusto! Similique consectetur dolorem ex quasi ad dolorum optio blanditiis quas numquam eum, maxime sed ipsa nulla officiis repellendus delectus iure unde qui repellat tempora sapiente! Atque, dicta dolorem!
+    </div>
+
+    <ul>
+        <li>Mango</li>
+        <li>Guvava</li>
+        <li>Canberry</li>
+        <li>Strawberrry</li>
+    </ul>
+</body>
+</html>
