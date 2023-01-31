@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: greenyellow;
+        }
+        fieldset{
+            margin: 80px 300px;
+            background-color: white;
+            box-shadow: 0px 0px 5px  black;
+        }
+        h1{
+            text-align: center;
+            padding: 30px 0px
+        }
+        table{
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        th{
+            text-align: right;
+            padding: 10px;
+        }
+        td{
+            padding: 10px;
+        }
+        .box-size{
+            height: 30px;
+            width: 300px;
+            padding: 5px;
+        }
+        .address{
+            padding: 5px;
+        }
+        .button{
+            text-align: center;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            height: 30px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+        }
+        button:hover{
+            color: black;
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>Registration for job</h1>
+
+        <table>
+            <tr>
+                <th>First Name:</th>
+                <td><input type="text" placeholder=" Enter First Name" class="box-size"></td>
+            </tr>
+            <tr>
+                <th>Middle Name:</th>
+                <td><input type="text" placeholder="Enter Middle Name" class="box-size"></td>
+            </tr>
+            <tr>
+                <th>Last Name:</th>
+                <td><input type="text" placeholder="Enter Last Name" class="box-size"></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><textarea name="" id="" cols="30" rows="5" placeholder="Enter Address" class="address" ></textarea></td>
+            </tr>
+            <tr>
+                <th>Date of Birth:</th>
+                <td><input type="date" class="box-size"></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" name="gender" id="">
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" id="">
+                    <label for="">Female</label>
+                    <input type="radio" name="gender" id="">
+                    <label for="">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Experiance:</th>
+                <td>
+                    <select name="" id="" class="box-size">
+                        <option value="">---Select---</option>
+                        <option value="">Fresher</option>
+                        <option value="">Less than 1 year</option>
+                        <option value="">More than 1 year</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Mobile No.:</th>
+                <td><input type="text" placeholder="Enter Mobile No" class="box-size"></td>
+            </tr>
+            <tr>
+                <th>Email id:</th>
+                <td><input type="email" placeholder="Enter email" class="box-size"></td>
+            </tr>
+            <tr>
+                <th>Create Password:</th>
+                <td><input type="password" placeholder="Enter Password" class="box-size"><br>
+                    <input type="checkbox">
+                    <label for="">Show Password</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="button">
+                    <button >Register</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
