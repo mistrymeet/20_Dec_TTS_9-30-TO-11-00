@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-child h1 {
+            text-align: center;
+            padding-top: 100px;
+            text-shadow: 0px 0px 1px black;
+        }
+
+        .block {
+            display: flex;
+            height: 450px;
+            width: 815px;
+            margin: auto;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .main .block .img img {
+            height: 450px;
+            width: 420px;
+        }
+
+        .main .block .form {
+            padding: 50px 80px;
+        }
+
+        .main .block .form h3 {
+            text-align: center;
+            font-size: 25px;
+            text-shadow: 0px 0px 2px black;
+            padding-bottom: 12px;
+        }
+
+        .main .block .form .p1 {
+            text-align: center;
+            color: rgb(146, 137, 137);
+            text-shadow: 0px 0px 1px silver;
+            padding-bottom: 20px;
+        }
+
+        .main .block .form table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main .block .form table input {
+            height: 25px;
+            width: 200px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(255, 166, 0);
+            background-color: rgba(255, 166, 0, 0.057);
+        }
+
+        .main .block .form table td button {
+            height: 30px;
+            width: 210px;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+            border: none;
+            background-color: orange;
+            color: white;
+        }
+
+        .main .block .form table td button:hover {
+            color: darkorange;
+            background-color: white;
+            border: 2px solid darkorange;
+        }
+
+        .main .block .form table {
+            padding-bottom: 20px;
+        }
+
+        .main .block .form .p2 {
+            text-align: center;
+            color: rgb(146, 137, 137);
+            text-shadow: 0px 0px 1px silver;
+            padding-bottom: 20px;
+        }
+
+        .main .block .form .p3 {
+            text-align: center;
+            color: rgb(146, 137, 137);
+            text-shadow: 0px 0px 1px silver;
+        }
+
+        .main .block .form .p3 a:visited {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-child">
+            <h1>Login In Form</h1>
+            <div class="block">
+                <div class="form">
+                    <h3>Login</h3>
+                    <p class="p1">To Your Account</p>
+
+                    <table>
+                        <form action="get">
+                            <tr>
+                                <td><input type="text" placeholder="User Name"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" placeholder="password"></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit">Log In</button></td>
+                            </tr>
+                    </table>
+
+                    <p class="p2">Or connect with social media</p>
+
+                    <p class="p3">Don't have an account?
+                        <a href="">Register</a>
+                    </p>
+                    </form>
+                </div>
+                <div class="img">
+                    <img src="Image/pexels-james-wheeler-1486974.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

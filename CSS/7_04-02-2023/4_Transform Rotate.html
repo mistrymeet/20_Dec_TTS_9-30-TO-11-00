@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 150px;
+            width: 150px;
+            background-color: tomato;
+            margin: 20px auto;
+            transition: 2s all ease;
+        }
+        .div1:hover{
+            transform: rotate(145deg);
+        }
+        .div2:hover{
+            transform: rotateX(140deg);
+        }
+        .div3:hover{
+            transform: rotateY(180deg);
+        }
+        .div4:hover{
+            transform: rotateX(236deg) rotateY(139deg) rotateZ(290deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">Hello World</div>
+    <div class="div2">Hello</div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+</html>
