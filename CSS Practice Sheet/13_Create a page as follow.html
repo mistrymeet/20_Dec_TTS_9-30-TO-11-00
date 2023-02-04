@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        img {
+            height: 713px;
+            width: 100%;
+        }
+
+        .form {
+            position: absolute;
+            background-color: white;
+            top: 110px;
+            left: 800px;
+            height: 390px;
+            width: 490px;
+            padding: 50px;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .main .form h4 {
+            font-size: 18px;
+            color: darkgreen;
+            padding-bottom: 10px;
+            text-shadow: 0px 0px 1px black;
+        }
+
+        .main .form p {
+            font-size: 28px;
+            font-weight: normal;
+            padding-bottom: 13px;
+            text-shadow: 0px 0px 1px black;
+        }
+        .main .form table td{
+            padding: 10px;
+        }
+        .main .form table td input{
+            padding: 10px;
+            height: 20px;
+            width: 450px;
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.251);
+        }
+        .main .form table td button{
+            padding: 5px;
+            height: 40px;
+            width: 475px;
+            border-radius: 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            box-shadow: 0px 0px 2px black;
+        }
+        .main .form table td button:hover{
+            background-color: white;
+            color: green;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="Images/Hero tree.jpg" alt="">
+
+        <div class="form">
+            <h4>
+                LANDFARM
+            </h4>
+            <P>
+                Request Call Back Caurses
+            </P>
+            <table>
+                <form action="get">
+                    <tr>
+                        <td><input type="text" placeholder="Your name"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Phone"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Subject"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">
+                                Get It Now
+                            </button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
