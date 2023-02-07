@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: cadetblue;
+            transition: 1s all ease;
+        }
+        .translet{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            gap: 100px;
+        }
+        .div1:hover{
+            transform: translate(50px, 80px);
+        }
+        .div2:hover{
+            transform: translateX(50px);
+        }
+        .div3:hover{
+            transform: translateY(-80px);
+        }
+        .div4:hover{
+            transform: translateX(60px) translateY(40px) translateZ(50px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="translet">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            <div class="div4"></div>
+        </div>
+    </section>
+</body>
+</html>
