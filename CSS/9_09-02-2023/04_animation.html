@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lodder {
+            height: 250px;
+            width: 250px;
+            display: grid;
+            margin: 200px auto;
+            place-items: center;
+            border-top: 5px solid red;
+            border-right: 5px solid red;
+            border-bottom: 5px solid darkseagreen;
+            border-left: 5px solid darkseagreen;
+            border-radius: 50%;
+            animation-name: loder;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .main {
+            height: 200px;
+            width: 200px;
+            display: grid;
+            place-items: center;
+            border-top: 5px solid sandybrown;
+            border-right: 5px solid seagreen;
+            border-bottom: 5px solid sandybrown;
+            border-left: 5px solid seagreen;
+            border-radius: 50%;
+            animation-name: main;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .sub {
+            height: 150px;
+            width: 150px;
+            border-top: 5px solid lightskyblue;
+            border-left: 5px solid lightskyblue;
+            border-bottom: 5px solid darkblue;
+            border-right: 5px solid darkblue;
+            border-radius: 50%;
+            animation-name: sub;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes loder {
+            from {
+                transform: translateX(0px);
+                /* transform: rotate(0deg); */
+            }
+
+            to {
+                transform: translateX(100px);
+                /* transform: rotate(360deg); */
+            }
+        }
+
+        @keyframes main {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes sub {
+            from {
+                transform: rotateX(0deg);
+            }
+
+            to {
+                transform: rotateX(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lodder">
+        <div class="main">
+            <div class="sub">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
