@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+a {
+    text-decoration: none;
+}
+ol {
+    list-style: none;
+}
+
+section .container .sec-m {
+    margin: 0px 250px;
+}
+
+section .container .sec-m .sec-p {
+    padding: 10px;
+}
+
+section .container .sec-m .cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+
+section .container .sec-m .sec-p .cont .logo {
+    flex: 1;
+}
+
+section .container .sec-m .sec-p .cont .navi {
+    flex: 3;
+}
+
+section .container .sec-m .cont .navi ol {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section .container .sec-m .cont .navi ol .li1::after {
+    content: "";
+    height: 20px;
+    width: 1px;
+    background-color: black;
+    display: block;
+}
+
+section .container .sec-m .sec-p .logo h1 {
+    color: rgb(0, 208, 255);
+    font-size: 35px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px black;
+}
+
+section .container .sec-m .sec-p .cont .navi ol li a {
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.3s all linear;
+}
+
+section .container .sec-m .sec-p .cont .navi ol li a:hover {
+    color: rgb(0, 208, 255);
+}
+
+section .container .sec-m .sec-p .cont .navi ol li span {
+    font-size: 13px;
+    transition: 0.3s all linear;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp:hover span {
+    transform: rotateX(180deg);
+    color: rgb(0, 208, 255);
+}
+
+section .container .sec-m .sec-p .cont .navi .prod:hover span {
+    transform: rotateX(180deg);
+    color: rgb(0, 208, 255);
+}
+
+section .container .sec-m .sec-p .cont .navi .prod {
+    position: relative;
+}
+
+section .container .sec-m .sec-p .cont .navi .prod .prod-inner {
+    display: none;
+    position: absolute;
+    top: 22px;
+    z-index: 1;
+}
+
+section .container .sec-m .sec-p .cont .navi .prod:hover .prod-inner {
+    display: block;
+}
+
+section .container .sec-m .sec-p .cont .navi .prod .prod-inner li {
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+    width: 150px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp {
+    position: relative;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp .corp-inner {
+    display: none;
+    position: absolute;
+    top: 22px;
+    z-index: 1;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp:hover .corp-inner {
+    display: block;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp .corp-inner li {
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+    width: 150px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+        <section>
+        <div class="container">
+            <div class="sec-m">
+                <div class="sec-p">
+                    <div class="cont">
+                        <div class="logo">
+                            <a href="">
+                                <h1>Finolex</h1>
+                            </a>
+                        </div>
+                        <div class="navi">
+                            <ol>
+                                <li><a href="">Home</a></li>
+                                <div class="li1"></div>
+                                <li class="prod"><a href="">Products</a>
+                                    <span class="fa-solid fa-angle-down"></span>
+                                    <ol class="prod-inner">
+                                        <li><a href="">wires & cables</a></li>
+                                        <li><a href="">optical fiber cables</a></li>
+                                        <li><a href="">switches</a></li>
+                                        <li><a href="">led lightings</a></li>
+                                        <li><a href="">fan</a></li>
+                                        <li><a href="">mcb</a></li>
+                                        <li><a href="">water heater</a></li>
+                                        <li><a href="">product milestones</a></li>
+                                    </ol>
+                                </li>
+                                <div class="li1"></div>
+                                <li class="corp"><a href="">Corporate</a>
+                                    <span class="fa-solid fa-angle-down"></span>
+                                    <ol class="corp-inner">
+                                        <li><a href="">about finolex cables</a></li>
+                                        <li><a href="">history</a></li>
+                                        <li><a href="">chirman's message</a></li>
+                                        <li><a href="">milestones</a></li>
+                                        <li><a href="">group companies</a></li>
+                                        <li><a href="">investor</a></li>
+                                        <li><a href="">csr</a></li>
+                                        <li><a href="">policies</a></li>
+                                    </ol>
+                                </li>
+                                <div class="li1"></div>
+                                <li><a href="">Media</a></li>
+                                <div class="li1"></div>
+                                <li><a href="">Blog</a></li>
+                                <div class="li1"></div>
+                                <li><a href="">E-store</a></li>
+                                <div class="li1"></div>
+                                <li><a href="">sales-enquiry</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

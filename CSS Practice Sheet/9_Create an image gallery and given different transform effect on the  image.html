@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .img{
+            width: 250px;
+            height: auto;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: 170px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            place-items: center;
+            padding: 30px;
+            row-gap: 20px;
+        }
+        .main .img .img1{
+            transition: 1s all linear;
+        }
+        .main .img .img1:hover{
+            transform: rotate(120deg);
+        }
+        .main .img .img2{
+            transition: 0.3s all linear;
+        }
+        .main .img .img2:hover{
+            transform: scale(1.1);
+        }
+        .main .img .img3{
+            transition: 1s all ease;
+        }
+        .main .img .img3:hover{
+            transform: skew(10deg, 20deg);
+        }
+        .main .img .img4{
+            transition: 1s all ease;
+        }
+        .main .img .img4:hover{
+            transform: translate(50px, 50px);
+        }
+        .main .img .img5{
+            transition: 1s all linear;
+        }
+        .main .img .img5:hover{
+            transform: rotate(360deg) scale(1.1) skew(10deg, 10deg) translate(10px, 10px);
+        }
+        .main .img .img6{
+            transition: 1s all ease-in-out;
+        }
+        .main .img .img6:hover{
+            transform: translateX(30px);
+        }
+        .main .img .img7{
+            transition: 1s all linear;
+        }
+        .main .img .img7:hover{
+            transform: scale(1.1)
+            translateY(50px);
+        }
+        .main .img .img8{
+            transition: 1s all linear;
+        }
+        .main .img .img8:hover{
+            transform: skewY(20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+            <img src="Images/Display/img 1 (1).jpg" alt="" class="img1">
+        </div>
+        <div class="img">
+            <img src="Images/Display/img 1 (2).jpg" alt="" class="img2">
+        </div>
+        <div class="img">
+            <img src="Images/Display/img 1 (3).jpg" alt="" class="img3">
+        </div>
+        <div class="img">
+            <img src="Images/Display/img 1 (4).jpg" alt=""class="img4">
+        </div>
+        <div class="img">
+            <img src="Images/Display/img 1 (5).jpg" alt="" class="img5">
+        </div>
+        <div class="img">
+            <img src="Images/Display/img 1 (6).jpg" alt="" class="img6">
+        </div>
+        <div class="img">
+            <img src="Images/Display/img 1 (7).jpg" alt="" class="img7">
+        </div>
+        <div class="img">
+            <img src="Images/Display/img 1 (8).jpg" alt="" class="img8">
+        </div>
+    </div>
+</body>
+</html>
