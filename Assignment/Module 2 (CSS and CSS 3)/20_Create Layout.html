@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .layout .container{
+            margin: 0px 100px;
+        }
+        .layout .container .layout-p{
+            padding: 40px 0px;
+        }
+        .layout .container .main{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .layout .container .main .div1{
+            box-shadow: 0px 0px 5px black;
+            border-radius: 10px 10px 0px 0px;
+            overflow: hidden;
+        }
+        .layout .container .main .div1 .img1{
+            height: auto;
+            padding-bottom: 5px;
+            overflow: hidden;
+        }
+        .layout .container .main .div1 .img1 img{
+            height: auto;
+            max-width: 100%;
+            transition: 0.5s all linear;
+            display: block;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .layout .container .main .div1 .img1:hover img{
+            transform: scale(1.1);
+        }
+        .layout .container .main .div1 .button{
+            padding:  0px 10px 10px 10px;
+        }
+        .layout .container .main .div1 .button p{
+            text-align: justify;
+            padding-bottom: 10px;
+        }
+        .layout .container .main .div1 .button button{
+            height: 40px;
+            width: 100px;
+            background-color: crimson;
+            color: white;
+            font-weight: 600;
+            border: 2px solid transparent;
+            border-radius: 40px;
+            transition: 0.5s all linear;
+        }
+        .layout .container .main .div1 .button button:hover{
+            color: crimson;
+            border: 2px solid crimson;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <section class="layout">
+        <div class="container">
+            <div class="layout-p">
+                <div class="main">
+                    <div class="div1">
+                        <div class="img1">
+                            <img src="Image/img1 (6).jpg" alt="">
+                        </div>
+                        <div class="button">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit deserunt aliquid esse. Necessitatibus similique vitae ea nobis voluptas? Amet perferendis minima natus quam accusantium repellendus! Quis pariatur a quas.</p>
+                        
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <div class="img1">
+                            <img src="Image/img1 (1).jpg" alt="">
+                        </div>
+                        <div class="button">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit deserunt aliquid esse. Necessitatibus similique vitae ea nobis voluptas? Amet perferendis minima natus quam accusantium repellendus! Quis pariatur a quas.</p>
+                        
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <div class="img1">
+                            <img src="Image/img1 (2).jpg" alt="">
+                        </div>
+                        <div class="button">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit deserunt aliquid esse. Necessitatibus similique vitae ea nobis voluptas? Amet perferendis minima natus quam accusantium repellendus! Quis pariatur a quas.</p>
+                        
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <div class="img1">
+                            <img src="Image/img1 (3).jpg" alt="">
+                        </div>
+                        <div class="button">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit deserunt aliquid esse. Necessitatibus similique vitae ea nobis voluptas? Amet perferendis minima natus quam accusantium repellendus! Quis pariatur a quas.</p>
+                        
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <div class="img1">
+                            <img src="Image/img1 (4).jpg" alt="">
+                        </div>
+                        <div class="button">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit deserunt aliquid esse. Necessitatibus similique vitae ea nobis voluptas? Amet perferendis minima natus quam accusantium repellendus! Quis pariatur a quas.</p>
+                        
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <div class="img1">
+                            <img src="Image/img1 (5).jpg" alt="">
+                        </div>
+                        <div class="button">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta suscipit deserunt aliquid esse. Necessitatibus similique vitae ea nobis voluptas? Amet perferendis minima natus quam accusantium repellendus! Quis pariatur a quas.</p>
+                        
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
