@@ -1,0 +1,36 @@
+@media (min-width: 576px) {
+
+    .container{
+        margin: 0px 30px;
+    }
+    header .header-p .navigation .logo {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        flex: 0.5;
+    }
+    header .header-p .navigation .nav {
+        flex: ;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .header-p .navigation .bar {
+        padding: 0px 20px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+        flex: 0.5;
+    }
+    
+    header .header-p .navigation .bar span {
+        color: white;
+        font-size: 23px;
+    }
+    header .header-p .navigation .bar button{
+        height: 30px;
+        width: 30px;
+        display: block;
+    }
+}

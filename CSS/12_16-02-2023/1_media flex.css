@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main .container {
+    margin: 0px 200px;
+}
+
+.main .container .main-p {
+    padding: 40px 0px;
+}
+
+.main .container .wild-tour {
+    display: flex;
+    gap: 70px;
+}
+
+.main .container .wild-tour .wild-img {
+    flex: 1.1;
+}
+
+.main .container .wild-tour .wild-img img {
+    height: auto;
+    max-width: 100%;
+}
+
+.main .container .wild-tour .wild-text {
+    padding: 100px 5px;
+    flex: 1.5;
+}
+
+.main .container .wild-tour .wild-text h5 {
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.main .container .wild-tour .wild-text h1 {
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.main .container .wild-tour .wild-text .p1 {
+    padding-bottom: 15px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.611);
+}
+
+.main .container .wild-tour .wild-text .p2 {
+    padding-bottom: 25px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.611);
+
+}
+
+.main .container .wild-tour .wild-text button {
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: white;
+    background-color: rgb(90, 121, 211);
+}
+
+
+@media (max-width:576px) {
+    .main .container {
+        margin: 0px 150px;
+    }
+    .main .container .wild-tour {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width:576px) {
+    .main .container {
+        margin: 0px 100px;
+    }
+    .main .container .wild-tour {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:768px) {
+    .main .container {
+        margin: 0px 100px;
+    }
+    .main .container .wild-tour {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:992px) {
+    .main .container .wild-tour {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1200px) {
+    .main .container {
+        margin: 0px 200px;
+    }
+}

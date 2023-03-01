@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* common css used in whole pages */
+a {
+    text-decoration: none;
+}
+
+ol {
+    list-style: none;
+}
+
+.container {
+    margin: 0px 90px;
+}
+
+/* ===================== Header ======================== */
+header {
+    background-color: black;
+}
+
+header .header-p {
+    padding: 30px 0px;
+}
+
+header .header-p .navigation {
+    display: flex;
+    align-items: center;
+}
+
+header .header-p .navigation .logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    flex: 0.5;
+}
+
+header .header-p .navigation .logo a {
+    color: white;
+}
+
+header .header-p .navigation .logo a span {
+    color: #ff7800;
+}
+
+header .header-p .navigation .nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-p .navigation .nav li a{
+    color: white;
+    font-weight: 500;
+    transition: 0.5s all linear;
+}
+
+header .header-p .navigation .nav li:hover a{
+    color: #ff7800;
+}
+header .header-p .navigation .nav .nav1 {
+    display: flex;
+    gap: 30px;
+}
+
+header .header-p .navigation .nav .nav1 .home span a{
+    color: #ff7800;
+}
+
+header .header-p .navigation .nav .nav1 .angle span{
+    color: white;
+    font-size: 14px;
+    transition: 0.5s all linear;
+}
+
+header .header-p .navigation .nav .nav1 .angle:hover span{
+    transform: rotateX(180deg);
+    color: #ff7800;
+}
+header .header-p .navigation .nav .search {}
+
+header .header-p .navigation .nav .search button {
+    height: 40px;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7800;
+    transition: 0.5s all linear;
+}
+header .header-p .navigation .nav .search button:hover{
+    background-color: #ff77008c;
+
+}
+
+header .header-p .navigation .nav .search button a {
+    font-size: 13px;
+    color: white;
+}
+
+header .header-p .navigation .nav .search button a span {}
+
+header .header-p .navigation .bar {
+    padding: 0px 20px;
+}
+
+header .header-p .navigation .bar span {
+    color: white;
+    font-size: 25px;
+}
+header .header-p .navigation .bar button{
+    height: 35px;
+    width: 35px;
+    display: none;
+    background-color: #ff7800;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.5s all linear;
+}
+header .header-p .navigation .bar button:hover{
+   background-color: #864a16;
+}

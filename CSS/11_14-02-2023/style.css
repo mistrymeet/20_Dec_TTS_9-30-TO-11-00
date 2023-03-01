@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    padding: 20px;
+    background-color: black;
+}
+
+.main .info {
+    display: flex;
+    gap: 30px;
+}
+
+.main .info p a {
+    font-size: 16px;
+    color: white;
+    transition: 0.5s all linear;
+}
+
+.main .info p a:hover {
+    color: rgb(0, 208, 255);
+}
+
+.main .symbols {
+    display: flex;
+    gap: 30px;
+}
+
+.main .symbols a {
+    font-size: 16px;
+    transition: 0.5s all linear;
+    color: white;
+}
+
+.main .symbols a:hover {
+    color: rgb(0, 208, 255);
+}
+
+
+/* section start */
+.section{
+    position: sticky;
+    
+}
+ol {
+    list-style: none;
+}
+
+section .container .sec-m {
+    margin: 0px 250px;
+}
+
+section .container .sec-m .sec-p {
+    padding: 10px;
+}
+
+section .container .sec-m .cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+
+section .container .sec-m .sec-p .cont .logo {
+    flex: 1;
+}
+
+section .container .sec-m .sec-p .cont .navi {
+    flex: 3;
+}
+
+section .container .sec-m .cont .navi ol {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section .container .sec-m .cont .navi ol .li1::after {
+    content: "";
+    height: 20px;
+    width: 1px;
+    background-color: black;
+    display: block;
+}
+
+section .container .sec-m .sec-p .logo h1 {
+    color: rgb(0, 208, 255);
+    font-size: 35px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px black;
+}
+
+section .container .sec-m .sec-p .cont .navi ol li a {
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.3s all linear;
+}
+
+section .container .sec-m .sec-p .cont .navi ol li a:hover {
+    color: rgb(0, 208, 255);
+}
+
+section .container .sec-m .sec-p .cont .navi ol li span {
+    font-size: 13px;
+    transition: 0.3s all linear;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp:hover span {
+    transform: rotateX(180deg);
+    color: rgb(0, 208, 255);
+}
+
+section .container .sec-m .sec-p .cont .navi .prod:hover span {
+    transform: rotateX(180deg);
+    color: rgb(0, 208, 255);
+}
+
+section .container .sec-m .sec-p .cont .navi .prod {
+    position: relative;
+}
+
+section .container .sec-m .sec-p .cont .navi .prod .prod-inner {
+    display: none;
+    position: absolute;
+    top: 22px;
+    z-index: 1;
+}
+
+section .container .sec-m .sec-p .cont .navi .prod:hover .prod-inner {
+    display: block;
+}
+
+section .container .sec-m .sec-p .cont .navi .prod .prod-inner li {
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+    width: 150px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp {
+    position: relative;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp .corp-inner {
+    display: none;
+    position: absolute;
+    top: 22px;
+    z-index: 1;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp:hover .corp-inner {
+    display: block;
+}
+
+section .container .sec-m .sec-p .cont .navi .corp .corp-inner li {
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 2px black;
+    width: 150px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+/* hero */
+section .hero {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+section .hero .mainimg {
+    height: 700px;
+    width: 100%;
+    filter: brightness(40%);
+    animation-name: main;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes main {
+
+    18%,
+    20%,
+    50%,
+    55%,
+    80%,
+    85%,
+    95% {
+        filter: brightness(40%);
+    }
+
+    18.1%,
+    20.1%,
+    50.1%,
+    55.1%,
+    80.1%,
+    85.1%,
+    95.1%,
+    100% {
+        filter: brightness(70%);
+    }
+
+}
+
+section .hero .led img {
+    filter: brightness(20%);
+    position: absolute;
+    top: 0px;
+    left: 680px;
+    height: 160px;
+    animation-name: led;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes led {
+
+    18%,
+    20%,
+    50%,
+    55%,
+    80%,
+    85%,
+    95% {
+        filter: brightness(20%);
+        box-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    50.1%,
+    55.1%,
+    80.1%,
+    85.1%,
+    95.1%,
+    100% {
+        filter: brightness(100%);
+    }
+
+}
+
+section .hero .hero-text {
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+section .hero .hero-text h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+section .hero .hero-text p {
+    width: 50%;
+    text-align: justify;
+    font-size: 23px;
+}
+
+/* main */
+section .block {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+section .block .img {
+    width: 35%;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+section .block .img img{
+    height: 420px;
+    display: block;
+    width: 100%;
+    box-shadow: 0px 0px 5px black;
+    transition: 0.5s all linear;
+}
+section .block .img:hover img{
+    transform: scale(1.1);
+}
+section .block .block-text {
+    text-align: justify;
+    width: 35%;
+    padding: 10px 0px;
+}
+section .block .block-text h3{
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(0, 208, 255);
+    text-shadow: 0px 0px 1px black;
+    padding-bottom: 50px;
+}
+section .block .block-text p{
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+section .block .block-text button{
+    text-transform: uppercase;
+    height: 40px;
+    width: 180px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 4px black;
+    background-color: rgb(0, 208, 255);
+    transition: 0.5s all linear;
+    border-radius: 10px;
+}
+section .block .block-text button:hover{
+    background-color: rgba(255, 255, 255, 0.199);
+    border: 2px solid rgb(0, 208, 255);;
+}
+
+/* footer */
+footer .container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.784);
+    padding: 50px 0px;
+}
+footer .container .about{
+    width: 18%;
+}
+footer .container .about h3{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+footer .container .about .div1::after{
+    content: "";
+    height: 1px;
+    width: 280px;
+    background-color: teal;
+    display: block;
+}
+footer .container .about p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+footer .container .about .symbol{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-size: 25px;
+}
+footer .container .about .symbol span{
+    color: rgba(255, 255, 255, 0.767);
+}
+footer .container .nav{
+    width: 22%;
+}
+footer .container .nav h3{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+footer .container .nav .div2::after{
+    content: "";
+    height: 1px;
+    width: 320px;
+    background-color: teal;
+    display: block;
+}
+footer .container .nav .flex .nav1 a{
+color: white;
+}
+footer .container .nav .flex .nav2 a{
+    color: white;
+    }
+footer .container .nav .flex{
+    display: flex;
+    gap: 25px;
+    line-height: 28px;
+    padding-top: 20px;
+}
+footer .container .office{
+    width: 18%;
+}
+footer .container .office .div3::after{
+    content: "";
+    height: 1px;
+    width: 250px;
+    background-color: teal;
+    display: block;
+}
+footer .container .office h3{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+footer .container .office address{
+    padding-top: 20px;
+}
