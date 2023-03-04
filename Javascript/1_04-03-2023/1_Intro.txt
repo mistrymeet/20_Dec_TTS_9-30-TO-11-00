@@ -1,0 +1,32 @@
+javascript is a scripting language.
+Also known as a object based scripting language.
+
+start in 1995.
+in powerful netscape web browser.
+initial realese in 1997.
+
+there is a first name of a javascript is livescript.
+dur to some trademark reason livescript name changed to javascript.
+
+javascript also called as typescript.
+pure javascript = vanila js (vanila ja is a full java script no framework or no js librey used only javascript)
+
+object?
+it is a logical or physical items.
+there is many properties of object are available.
+Ex. table is an object.
+properties of table are:- table_type, table_color, table_size, table_price, table_brand.
+
+person is an object.
+properties are:- name, age, address, date of birth, city...
+
+physical object are date and time.
+date:- date, month, year
+time:- hours, minutes, second, milisecond
+
+there are the ways to add javascript in html file.
+
+1) inline - using with events.
+2) internal - in <script> tag in <body> or <head>.
+3) create an external file using .js extension and link with <script> tag.
+
