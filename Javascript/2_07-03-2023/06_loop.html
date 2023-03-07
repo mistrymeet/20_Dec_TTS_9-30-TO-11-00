@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+         loop is a count number of iterations.
+         in javascript there is a three types of loop.
+
+         1) while loop
+         syntex:
+                while(condition){
+                    statement;
+                }
+                ("{}" is block)
+        
+
+        2) do... while loop
+        syntex:
+                do{
+                    statement;
+                }while (condition)
+
+        3) for.. loop
+        syntex:
+        (initialization = declaration)
+                for(initializatio; condition; increment/decrement;){
+                    statements;
+                }
+        
+        4) for... in loop
+        5) for.. off loop
+        6) foreach loop
+         -->
+
+        <script>
+            // if we want to print 1 to 10 numbers than use loop
+
+            let a = 1;
+            while(a <= 10){
+                document.writeln(a);
+                a++;
+            }
+            // document.write(a)
+            document.write("<br>")
+
+            let b = 10;
+            do{
+                document.writeln(b);
+                b++;
+            }while(b < 21);
+            document.write("<br>")
+
+            for(let d =1; d<=20; d++){
+                document.writeln(d)
+            }
+            document.write("<br>")
+
+
+            // decrement
+            for(let d = 10; d>=1; d--){
+                document.writeln(d)
+            }
+
+        </script>
+        
+</body>
+</html>
