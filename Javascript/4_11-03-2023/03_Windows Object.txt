@@ -1,0 +1,10 @@
+windows object
+5 function/ methods
+
+(1) alert()
+(2) confirm
+(3) Prompt
+(4) open
+(5) close
+
+alert(), confirm() and Prompt() also called as popup boxes.
