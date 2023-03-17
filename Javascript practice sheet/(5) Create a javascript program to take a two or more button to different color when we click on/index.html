@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="return purple_fn()">Purple</button>
+    <button onclick="return fire_fn()">Firebrick</button>
+    <br><br>
+
+    <div id="div1"></div>
+    <br>
+    <div id="div2"></div>
+
+    <script>
+        function purple_fn(){
+            let div1 = document.getElementById("div1")
+            div1.style.backgroundColor = "purple"
+        }
+        function fire_fn(){
+            let div2 = document.getElementById("div2")
+            div2.style.backgroundColor = "firebrick"
+        }
+    </script>
+</body>
+</html>

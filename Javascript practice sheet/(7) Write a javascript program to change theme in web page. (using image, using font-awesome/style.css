@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ol{
+    list-style: none;
+}
+.container{
+    margin: 0px 100px;
+}
+.header{
+
+}
+.header-p{
+    padding: 30px 0px;
+}
+.header .header-flex{
+    display: flex;
+    align-items: center;
+}
+.header .header-flex .logo{
+    flex: 1;
+}
+.header .header-flex .logo h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+}
+.header .header-flex .nav{
+    flex: 2;
+}
+.header .header-flex .nav ol{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+.header .header-flex .nav ol a{
+    color: brown;
+    font-size: 18px;
+}
+.header .header-flex .bars{
+    flex: 1;
+}
+.header .header-flex .bars span{
+    font-size: 18px;
+    color: brown;
+    display: none;
+}
+
+.header .header-flex .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.2;
+}
+.header .header-flex .icon span{
+    font-size: 20px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50%;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+    transition: 0.5s all ease-in-out;
+}
+.dark-mode .header{
+    color: white;
+}

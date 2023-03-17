@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: coral;
+        }
+        .dark-mode a{
+            color: springgreen;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/moon.png" alt="" id="img">
+    </div>
+    <h1>hello world</h1>
+    <h3><a href="">Click here to redirect next page</a></h3>
+
+    <script>
+        let icon = document.getElementById("img")
+        icon.addEventListener("click", function(){
+            document.body.classList.toggle("dark-mode")
+
+            if(document.body.classList.contains("dark-mode") == true){
+                icon.src = "images/sun.png"
+            }else{
+                icon.src = "images/moon.png"
+            }
+        })
+    </script>
+</body>
+</html>

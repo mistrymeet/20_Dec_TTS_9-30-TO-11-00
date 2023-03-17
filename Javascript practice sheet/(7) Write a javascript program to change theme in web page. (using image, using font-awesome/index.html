@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- mediaquary -->
+    <link rel="stylesheet" href="max 576.css">
+    <link rel="stylesheet" href="min 576.css">
+    <link rel="stylesheet" href="min 768.css">
+    <link rel="stylesheet" href="min 992.css">
+    <link rel="stylesheet" href="min 1200.css">
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header-p">
+                <div class="header-flex">
+                    <div class="logo">
+                        <h1>Hello World</h1>
+                    </div>
+
+                    <div class="nav">
+                        <ol>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Team</a></li>
+                            <li><a href="">Gallary</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="bars">
+                        <span class="fa-solid fa-bars"></span>
+                    </div>
+
+                    <div class="icon">
+                        <span class="fa-solid fa-moon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let icon = document.querySelector(".fa-moon")
+        icon.addEventListener("click", function(){
+            document.body.classList.toggle("dark-mode")
+
+            if(document.body.classList.contains("dark-mode") == true){
+                icon.classList.remove("fa-moon")
+                icon.classList.add("fa-sun")
+            }else{
+                icon.classList.remove("fa-sun")
+                icon.classList.add("fa-moon")
+            }
+        })
+    </script>
+</body>
+</html>

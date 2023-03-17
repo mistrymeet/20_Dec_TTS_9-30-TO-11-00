@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form input:focus-visible{
+            outline: none;
+        }
+        .visible{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        Enter Password :
+        <input type="password" id="pass">
+        <br>
+        <input type="checkbox" onclick="return click_fn()">
+        Show Password
+    </form>
+
+    <script>
+        let pass = document.getElementById("pass")
+        function click_fn(){
+            if(pass.type == "password"){
+                pass.type = "text"
+            }else{
+                pass.type = "password"
+            }
+        }
+    </script>
+</body>
+</html>
