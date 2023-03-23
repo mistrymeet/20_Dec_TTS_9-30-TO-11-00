@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+
+    <script>
+        function sub_check(){
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+
+            // let male = document.fname.gen[0].checked
+            // let female = document.fname.gen[1].checked
+
+            if(male == false && female == false){
+                document.getElementById("msg1").innerHTML = "Please Select Gender"
+            }else{
+                document.getElementById("msg1").innerHTML = ""
+            }
+
+            let h1 = document.getElementById("h1").checked
+            let h2 = document.getElementById("h2").checked
+            let h3 = document.getElementById("h3").checked
+            if(h1 == false && h2 == false && h3 == false){
+                document.getElementById("msg2").innerHTML = "Please Select Hobbies"
+            }else{
+                document.getElementById("msg2").innerHTML = ""
+            }
+            
+
+            let city = document.getElementById("city").value;
+            if(city == -1){
+                document.getElementById("msg3").innerText = "Please Select City"
+
+            }else{
+                document.getElementById("msg3").innerHTML = ""
+            }
+            return false
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="fname">
+        <label for="">Gender :</label>
+        <input type="radio" name="gen" id="male">
+        Male 
+        <input type="radio" name="gen" id="female">
+        Female
+        <span id="msg1"></span>
+
+        <br><br>
+        <label for="">Hobbies</label>
+        <input type="checkbox" id="h1">
+        Drawing
+        <input type="checkbox" id="h2">
+        Music
+        <input type="checkbox" id="h3">
+        Cricket
+        <span id="msg2"></span>
+
+        <br><br>
+        <label for="">City :</label>
+        <select name="" id="city">
+            <option value="-1">--- select ---</option>
+            <option value="">Surat</option>
+            <option value="">Vadodara</option>
+        </select>
+        <span id="msg3"></span>
+
+        <br><br>
+
+        <button type="submit" onclick="return sub_check()">Submit</button>
+    </form>
+</body>
+</html>
