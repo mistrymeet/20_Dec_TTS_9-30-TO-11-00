@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- script -->
+    <script>
+        function check_blank(){
+            let fn = document.getElementById("fn").value
+            let ln = document.getElementById("ln").value
+            let mn = document.getElementById("mn").value
+            let add = document.getElementById("add").value
+            let mno = document.getElementById("mno").value
+            let mail = document.getElementById("mail").value
+            let pass = document.getElementById("pass").value
+            let cpass = document.getElementById("cpass").value
+            let exp = document.getElementById("exp").value
+            let date = document.getElementById("date").value
+            let male = document.getElementById("male").checked
+            let female = document.getElementById("female").checked
+
+            if(male == false && female == false){
+                document.getElementById("msg5").innerHTML = "* Select Gender"
+            }else{
+                document.getElementById("msg5").innerHTML = ""
+            }
+
+            if(fn == ""){
+                document.getElementById("msg1").innerHTML = "* Enter First Name"
+            }else{
+                document.getElementById("msg1").innerHTML = ""
+            }
+
+            if(mn == ""){
+                document.getElementById("msg2").innerHTML = "* Enter Middle Name"
+            }else{
+                document.getElementById("msg2").innerHTML = ""
+            }
+
+            if(ln == ""){
+                document.getElementById("msg3").innerHTML = "* Enter Last Name"
+            }else{
+                document.getElementById("msg3").innerHTML = ""
+            }
+
+            if(add == ""){
+                document.getElementById("msg4").innerHTML = "* Enter Address"
+            }else{
+                document.getElementById("msg4").innerHTML = ""
+            }
+
+            if(date == ""){
+                document.getElementById("msg11").innerHTML = "* Enter DOB"
+            }else{
+                document.getElementById("msg11").innerHTML = ""
+            }
+
+            if(exp == -1){
+                document.getElementById("msg6").innerHTML = "* Select Experiance"
+            }else{
+                document.getElementById("msg6").innerHTML = ""
+            }
+
+            if(mno == ""){
+                document.getElementById("msg7").innerHTML = "* Enter Mobile No."
+            }else{
+                document.getElementById("msg7").innerHTML = ""
+            }
+            
+            if(mno.length < 10){
+                document.getElementById("msg12").innerHTML = "* Enter Valid Mobile No"
+            }else{
+                document.getElementById("msg12").innerHTML = ""
+            }
+
+            if(mail == ""){
+                document.getElementById("msg8").innerHTML = "* Enter Email"
+            }else{
+                document.getElementById("msg8").innerHTML = ""
+            }
+
+            if(pass == ""){
+                document.getElementById("msg9").innerHTML = "* Enter Password"
+            }else{
+                document.getElementById("msg9").innerHTML = ""
+            }
+
+            if(cpass == ""){
+                document.getElementById("msg10").innerHTML = "* Enter Confirm Password"
+            }else{
+                document.getElementById("msg10").innerHTML = ""
+            }
+            return false
+        }
+
+        function first_reg_ex(){
+            let fn = document.getElementById("fn").value
+            let f_reg_ex = /^[a-zA-Z]*$/
+            if(f_reg_ex.test(fn)){
+                document.getElementById("msg1").innerHTML = ""
+            }else{
+                document.getElementById("msg1").innerHTML = " * Alphabets Only"
+            }
+            return false;
+        }
+
+        function m_reg_ex(){
+            let mn = document.getElementById("mn").value
+            let m_reg_ex = /^[a-zA-Z]*$/
+            if(m_reg_ex.test(mn)){
+                document.getElementById("msg2").innerHTML = ""
+            }else{
+                document.getElementById("msg2").innerHTML = "* Alphabets Only"
+            }
+            return false;
+        }
+
+        function l_reg_ex(){
+            let ln = document.getElementById("ln").value
+            let l_reg_ex = /^[a-zA-Z]*$/
+            if(l_reg_ex.test(ln)){
+                document.getElementById("msg3").innerHTML = ""
+            }else{
+                document.getElementById("msg3").innerHTML = "* Alphabets Only"
+            }
+            return false;
+        }
+
+        function mno_reg_ex(){
+            let mno = document.getElementById("mno").value
+            let mno_reg_ex = /^[0-9]*$/
+            if(mno_reg_ex.test(mno)){
+                document.getElementById("msg7").innerHTML = ""
+            }else{
+                document.getElementById("msg7").innerHTML = "* Numbers Only"
+            }
+            return false;
+        }
+
+        function em_reg_ex(){
+            let mail = document.getElementById("mail").value
+            let em_reg_ex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            if(em_reg_ex.test(mail)){
+                document.getElementById("msg8").innerHTML = ""
+            }else{
+                document.getElementById("msg8").innerHTML = "* Invalid Email"
+            }
+            return false
+        }
+
+        function pass_reg_ex(){
+            let pass = document.getElementById("pass").value
+            let pass_reg_ex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+            if(pass_reg_ex.test(pass)){
+                document.getElementById("msg9").innerHTML = ""
+            }else{
+                document.getElementById("msg9").innerHTML = "* Invalid Password"
+            }
+            return false
+        }
+
+        function compare_pass(){
+            let pass = document.getElementById("pass").value
+            let cpass = document.getElementById("cpass").value
+            if(pass != cpass){
+                document.getElementById("msg10").innerHTML = "* Password and Confirm Password does not match"
+            }else{
+                document.getElementById("msg10").innerHTML = ""
+            }
+            return false
+        }
+
+        function check_pass(){
+            let pass = document.getElementById("pass")
+            if(pass.type == "password"){
+                pass.type = "text"
+            }else{
+                pass.type = "password"
+            }
+        }
+
+        function check_cpass(){
+            let cpass = document.getElementById("cpass")
+            if(cpass.type == "password"){
+                cpass.type = "text"
+            }else{
+                cpass.type = "password"
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        <h1>
+            Registration Form :
+        </h1>
+        <div class="row">
+            <div class="col1">
+                First Name :
+            </div>
+            <div class="col2">
+                <input type="text" placeholder="Enter First Name" id="fn" onkeyup="return first_reg_ex()">
+                <span id="msg1"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Middle Name :
+            </div>
+            <div class="col2">
+                <input type="text" placeholder="Enter Middle Name" id="mn"
+                onkeyup="return m_reg_ex()">
+                <span id="msg2"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Last Name :
+            </div>
+            <div class="col2">
+                <input type="text" placeholder="Enter Last Name" id="ln" onkeyup="return l_reg_ex()">
+                <span id="msg3"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Address :
+            </div>
+            <div class="col2">
+                <textarea name="" id="add" cols="30" rows="5" placeholder="Enter Addresss"></textarea>
+                <span id="msg4"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Date of Birth :
+            </div>
+            <div class="col2">
+                <input type="date" id="date">
+                <span id="msg11"></span>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Gender :
+            </div>
+            <div class="col2">
+                <input type="radio" name="gen" id="male">
+                Male
+                <input type="radio" name="gen" id="female">
+                Female
+                <span id="msg5"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Experiance :
+            </div>
+            <div class="col2">
+                <select name="" id="exp">
+                    <option value="-1">---- select ----</option>
+                    <option value="">Fresher</option>
+                    <option value="">Less than 1 year</option>
+                    <option value="">More than 1 year</option>
+                </select>
+                <span id="msg6"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Mobile No :
+            </div>
+            <div class="col2">
+                <input type="text" name="" id="mno" placeholder="Enter Mobile No" maxlength="10" onkeyup="return mno_reg_ex()">
+                <span id="msg7"></span>
+                <span id="msg12"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Email id :
+            </div>
+            <div class="col2">
+                <input type="text" placeholder="Enter Email id" id="mail" onkeyup="return em_reg_ex()">
+                <span id="msg8"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Create Password :
+            </div>
+            <div class="col2">
+                <input type="password" placeholder="Enter Password" id="pass" onkeyup="return pass_reg_ex()">
+                <span id="msg9"></span>
+                <br>
+                <input type="checkbox" onclick="return check_pass()">
+                Show Password
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                Confirm Password :
+            </div>
+            <div class="col2">
+                <input type="password" placeholder="Enter Confirm Password" id="cpass" onkeyup="return compare_pass()">
+                <span id="msg10"></span>
+                <br>
+                <input type="checkbox" onclick="return check_cpass()">
+                Show Password
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+
+            </div>
+            <div class="col2">
+                <p>
+                    <b>Note :</b> A password between 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+            </div>
+            <div class="col2">
+                <button type="submit" onclick="return check_blank()">Register</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
