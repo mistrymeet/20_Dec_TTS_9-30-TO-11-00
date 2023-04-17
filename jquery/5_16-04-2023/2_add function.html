@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#h1").append("Meet Mistry")
+            })
+
+            $("#btn2").click(function(){
+                $("#h1").prepend("Meet Mistry")
+            })
+            $("#btn3").click(function(){
+                $("#h1").before("!!!")
+            })
+            $("#btn4").click(function(){
+                $("#h1").after("M Mistry")
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepand</button>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+    <br>
+
+    <h1 id="h1">Hello World</h1>
+</body>
+</html>

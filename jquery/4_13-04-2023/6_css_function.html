@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $("h1").css("color","red") //use for single css prop
+                $("h1").css({margin:"20px",color:"blue",backgroundColor:"deeppink"})
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">Click Here</button>
+    <h1>
+        HeLLO WoRld
+    </h1>
+</body>
+</html>
