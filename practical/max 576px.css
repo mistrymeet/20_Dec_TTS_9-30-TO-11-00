@@ -1,0 +1,30 @@
+@media (max-width: 576px) {
+    .container{
+        margin: 0px 30px;
+    }
+    .navigation{
+        display: none;
+    }
+    .header .header-flex .nav{
+        display: none;
+    }
+    .header .header-flex .bars{
+        display: block;
+    }
+    .header .header-flex .show_menu{
+        display: block;
+        position: absolute;
+        top: 100px;
+    }
+    .header .header-flex .show_menu ol{
+        flex-direction: column;
+    }
+
+    /* ======= homeimg ======= */
+    .homeimg .input input{
+        width: 300px;
+    }
+    .homeimg .input button{
+        right: 80px;
+    }
+}

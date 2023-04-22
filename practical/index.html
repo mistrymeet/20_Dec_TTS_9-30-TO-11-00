@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#open_btn").click(function(){
+                $(".nav").addClass("show_menu").slideToggle()
+            })
+        })
+    </script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- media query -->
+    <link rel="stylesheet" href="max 576px.css">
+    <link rel="stylesheet" href="min 576px.css">
+    <link rel="stylesheet" href="min 768px.css">
+    <link rel="stylesheet" href="min 992px.css">
+    <link rel="stylesheet" href="min 1200px.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="navigation">
+        <div class="container">
+            <div class="navigation-p">
+                <div class="navigation-flex">
+                    <div class="contacts">
+                        <ol>
+                            <li>
+                                <span class="fa-solid fa-location-dot"></span>
+                                123 Street, New York, USA
+                            </li>
+                            <li>
+                                <span class="fa-solid fa-phone"></span>
+                                +91-8849522105
+                            </li>
+                            <li>
+                                <span class="fa-solid fa-envelope"></span>
+                                meetmistry404@gmail.com
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="symbols">
+                        <ol>
+                            <li><a href=""><span class="fa-brands fa-twitter"></span></a></li>
+                            <li><a href=""><span class="fa-brands fa-facebook"></span></a></li>
+                            <li><a href=""><span class="fa-brands fa-linkedin"></span></a></li>
+                            <li><a href=""><span class="fa-brands fa-instagram"></span></a></li>
+                            <li><a href=""><span class="fa-brands fa-youtube"></span></a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header">
+        <div class="container">
+            <div class="header-p">
+                <div class="header-flex">
+                    <div class="logo">
+                        <a href="">
+                            <span class="fa-solid fa-location-dot"></span>
+                            <h1>Tourist</h1>
+                        </a>
+                    </div>
+
+                    <div class="nav">
+                        <ol>
+                            <li><a href="" class="home">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Packages</a></li>
+                            <li class="pages"><a href="">Pages</a>
+                                <span class="fa-solid fa-angle-down"></span>
+                                <ol class="pages-menu">
+                                    <li><a href="">Destination</a></li>
+                                    <li><a href="">Booking</a></li>
+                                    <li><a href="">Travels Guide</a></li>
+                                    <li><a href="">Testimonial</a></li>
+                                    <li><a href="">404 Pages</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="">Contacts</a></li>
+                            <button>Register</button>
+                        </ol>
+                    </div>
+
+                    <div class="bars">
+                        <button id="open_btn">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="homeimg">
+        <div class="home-p">
+            <h1>Enjoy Your Vacation With Us</h1>
+            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <div class="input">
+                <input type="text" placeholder="Eg: Thailand">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

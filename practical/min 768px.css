@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    .container{
+        margin: 0px 50px;
+    }
+    .navigation{
+        display: none;
+    }
+    .header .header-flex .nav{
+        display: none;
+    }
+    .header .header-flex .bars{
+        display: block;
+    }
+    .header .header-flex .show_menu{
+        display: block;
+        position: absolute;
+        top: 100px;
+    }
+    .header .header-flex .show_menu ol{
+        flex-direction: column;
+    }
+}
