@@ -1,0 +1,152 @@
+(1) What are the advantages of Bootstrap?
+Ans: 
+    Bootstrap is Easy to Use: Bootstrap is very easy and quite simple to use for designing and development. Being a new framework there is a lot to learn from it. It can be used with CSS, LESS or SaaS etc.
+
+    An Alliance is Quite Easy: Bootstrap is a framework which is easily integrated with bulk frameworks uninterrupted with existing sites or the new one.
+
+    Fast and Time-Saving Framework: Bootstrap is an agile framework which is quite faster than other frameworks. It saves time due to its standard ready-made coding blocks, responsiveness, and cross-browser capabilities.
+
+    Reinforcement of Grids: One more recommendable feature is that bootstrap holds 12 column grid styles and supports responsiveness, counterbalance, and embedded elements.
+
+    Adhere to Basics: Bootstrap is a framework which holds base styling HTML elements like, tables, typography, buttons, forms, images, lists, and icons etc.
+
+    A Pack of JavaScript Fundamentals: Bootstrap supports Javascript Components so one don't require knowledge of scripting. It comprises JavaScript components like, tooltips, modal windows, alerts etc. to add functionalities easily.
+
+    Support is Amazing: Bootstrap is well-known for its big support community and agile response or online solution for the problems or queries. It also offers a great documentation along with examples and demo. It provides solutions to freshers and veterans alike.
+
+    Bootstrap is totally Customizable: It is developer friendly and can be customized as per the project requirements. Common CSS, utilities, Javascript Components, and components can compose the appearance to create ease for developers.
+
+    Agile Responsive: Bootstrap is a fully responsive platform supporting fluid grid layout. It crafts a mobile ready site smoothly and easily and sets web design as per the dimensions of the particular device.
+
+    Bootstrap's Consistency: Websites or mobile applications made with bootstrap technology can make you feel the awesome pairing of developers and designers ensuring consistency.
+
+    Frequent Updates: It provides regular updates and makes the whole eco-system hefty and robust according to the time.
+
+(2) What is a Bootstrap Container, and how does it work?
+Ans: 
+    Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.
+
+(3) What are the default Bootstrap text settings?
+Ans: 
+    The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif. In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+
+(4) What do you know about the Bootstrap Grid System?
+Ans:
+    Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. 
+
+    ex. 
+       <div class="container">
+         <div class="row">
+           <div class="col-sm">
+              One of three columns
+           </div>
+           <div class="col-sm">
+              One of three columns
+           </div>
+           <div class="col-sm">
+              One of three columns
+           </div>
+         </div>
+      </div>
+
+(5) What is the difference between Bootstrap 4 and Bootstrap 5?
+Ans:
+
+The Bootstrap 4 form has jquery.
+
+The jquery is not utilized in Bootstrap 5.
+
+Bootstrap 4 has less collection of colors.
+
+Bootstrap 5 has vibrant and more colors available.
+
+Bootstrap 4 has Browsers restrictions.
+
+Bootstrap 5 improved the browser restriction.
+
+Bootstrap 4 has has 5 tier grid system.
+
+Bootstrap 5 has 6 tier grid system.
+
+The APIs cannot be customized In Bootstrap 4.
+
+Bootstrap 5 Allows modifying APIs or develop own API.
+
+In Bootstrap 4 positioning feature is absent.
+
+Columns can be positioned In Bootstrap 5.
+
+Bootstrap 4 has Less CSS usability.
+
+More CSS properties also customized properties In Bootstrap 5.
+
+Bootstrap 4 Uses default form development tools.
+
+Bootstrap 5 has Better development of forms.
+
+There is no offcanvas component In Bootstrap 4.
+
+The offcanvas component is added In Bootstrap 5.
+
+Bootstrap 4 provides normal form layout with no advance features.
+
+Bootstrap 5 Provides advance and attractive features to make forms.
+
+Bootstrap 4 Does not support RTL(right to left) switching in languages.
+
+Bootstrap 5 supports RTL(right to left) switching in languages.
+
+No themes customization In Bootstrap 4.
+
+Bootstrap 5 Provides theme customization.
+
+Bootstrap 4 has Small icon collection.
+
+Bootstrap 5 has Large icon collection.
+
+(6) What is a Button Group, and what is the class for a basic Button Group?
+Ans:
+    “Button Groups” in Bootstrap is a class of name “btn-group” which is used to create series of buttons in groups (without spaces) vertically or horizontally.
+
+    This is the basic syntax of the button group class where each button has its own class of “btn”.
+
+    <div class="btn-group">
+        <button type="button" class="btn">Click</button>
+    </div>
+    Buttons have a default border-radius on the first and last buttons of the group.
+
+(7) How can you use Bootstrap to make thumbnails?
+Ans:
+    Add an <a> tag with the class of .thumbnail around an image.
+
+    This adds four pixels of padding and a gray border.
+
+    On hover, an animated glow outlines the image.
+
+(8) In Bootstrap 4, what is flexbox?
+Ans:
+    In Bootstrap 4, flex box is used to control the layout and alignment specification of Bootstrap 4 components. This box makes it easier to design flexible responsive layout structures without using float or positioning attributes.
+
+(9) How can one create an alert in Bootstrap?
+Ans:
+    Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger:
+
+    <div class="alert alert-success">
+      <strong>Success!</strong> Indicates a successful or positive action.
+    </div>
+
+    <div class="alert alert-info">
+      <strong>Info!</strong> Indicates a neutral informative change or action.
+    </div>
+
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> Indicates a warning that might need attention.
+    </div>
+
+    <div class="alert alert-danger">
+      <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+    </div>    
+
+(10) What is a bootstrap card and how would you create one?
+Ans:
+    A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
