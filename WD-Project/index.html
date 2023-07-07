@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <!-- bx-slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- bxslider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+
+    <!-- font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
+    <!-- media quary -->
+    <link rel="stylesheet" href="media max 576px.css">
+    <link rel="stylesheet" href="media min 576px.css">
+    <link rel="stylesheet" href="media min 768px.css">
+    <link rel="stylesheet" href="media min 992px.css">
+    <link rel="stylesheet" href="media min 1200px.css">
+    <link rel="stylesheet" href="media min 1400px.css">
+
+    <!-- bx slider -->
+    <script>
+        $(function(){
+          $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: false,
+            pager: false,
+            controls: false,
+            auto: true,
+            speed: 1000
+            
+    });
+  });
+    </script>
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header-p">
+                <!-- use for flex -->
+                <div class="navigation">
+                    <div class="logo">
+                        <a href="">Thrillyaari</a>
+                    </div>
+                    <div class="nav">
+                        <ol>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#gallary">Gallary</a></li>
+                            <li class="up-menu"><a href="#tours">Upcoming Tours</a>
+                                <span class="fa-solid fa-angle-down"></span>
+                                <ol class="inner-menu">
+                                    <li><a href="#tours">National Tours</a></li>
+                                    <div class="div1"></div>
+                                    <li><a href="#tours">International Tours</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ol>
+                    </div>
+                    <div class="symbol">
+                        <a href="https://www.facebook.com/" target="_blank"><span class="fa-brands fa-facebook-f"></span></a>
+                        <a href="https://twitter.com/" target="_blank"><span class="fa-brands fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/" target="_blank"><span class="fa-brands fa-instagram"></span></a>
+                    </div>
+                    <div class="bar">
+                        <button id="toggle_btn">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                    </div>
+                    <div class="moon">
+                        <span class="fa-solid fa-moon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bxslider" id="home">
+        <div class="home-text1 home">
+            <div class="container">
+                <div class="home-p">
+                    <p class="p1">ADVENTURE AWAITS FOR YOU
+                        LET'S TRAVEL TO SEE THE WORLD
+                    </p>
+                    <p class="p2">
+                        Thrillyaari
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-text2 home">
+            <div class="container">
+                <div class="home-p">
+                    <p class="p1">ADVENTURE AWAITS FOR YOU
+                        LET'S TRAVEL TO SEE THE WORLD
+                    </p>
+                    <p class="p2">
+                        Thrillyaari
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-text3 home">
+            <div class="container">
+                <div class="home-p">
+                    <p class="p1">ADVENTURE AWAITS FOR YOU
+                        LET'S TRAVEL TO SEE THE WORLD
+                    </p>
+                    <p class="p2">
+                        Thrillyaari
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-text4 home">
+            <div class="container">
+                <div class="home-p">
+                    <p class="p1">ADVENTURE AWAITS FOR YOU
+                        LET'S TRAVEL TO SEE THE WORLD
+                    </p>
+                    <p class="p2">
+                        Thrillyaari
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-p">
+                <div class="about-text">
+                    <div class="para">About Us</div>
+                    <div class="about-flex">
+                        <div class="img">
+                            <ol class="slider">
+                                <li class="slide1"></li>
+                                <li class="slide2"></li>
+                                <li class="slide3"></li>
+                                <li class="slide4"></li>
+                            </ol>
+                        </div>
+                        <div class="text">
+                            <h1>We Are Explore</h1>
+                            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus totam quo
+                                asperiores magni consequatur laudantium, ratione illo commodi eligendi reiciendis odio
+                                dolores ad nam ut, officia sed accusamus laboriosam a?</p>
+                            <p class="p2"><span class="fa-regular fa-circle-check"></span> First class flights</p>
+                            <p class="p2"><span class="fa-regular fa-circle-check"></span> inclusive packages</p>
+                            <p class="p2"><span class="fa-regular fa-circle-check"></span> +120 Premium city tours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team-p">
+                <div class="team-head">
+                    <h1>Our Wonderful Team</h1>
+                </div>
+                <div class="team-grid">
+                    <div class="img">
+                        <img src="Images/T1 (1).jpg" alt="">
+                        <div class="text">
+                            <p class="p1">Cristina D'souza</p>
+                            <p class="p2">Tour Guide</p>
+                            <div class="a">
+                                <a href=""><span class="fa-brands fa-facebook-f"></span></a>
+                                <a href=""><span class="fa-brands fa-twitter"></span></a>
+                                <a href=""><span class="fa-brands fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/T1 (2).jpg" alt="">
+                        <div class="text">
+                            <p class="p1">Preet Malhotra</p>
+                            <p class="p2">Tour Consultant</p>
+                            <div class="a">
+                                <a href=""><span class="fa-brands fa-facebook-f"></span></a>
+                                <a href=""><span class="fa-brands fa-twitter"></span></a>
+                                <a href=""><span class="fa-brands fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/T1 (3).jpg" alt="">
+                        <div class="text">
+                            <p class="p1">Kriti Patel</p>
+                            <p class="p2">Travel Agent</p>
+                            <div class="a">
+                                <a href=""><span class="fa-brands fa-facebook-f"></span></a>
+                                <a href=""><span class="fa-brands fa-twitter"></span></a>
+                                <a href=""><span class="fa-brands fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/T1 (4).jpg" alt="">
+                        <div class="text">
+                            <p class="p1">Jessi Arora</p>
+                            <p class="p2">Agency Director</p>
+                            <div class="a">
+                                <a href=""><span class="fa-brands fa-facebook-f"></span></a>
+                                <a href=""><span class="fa-brands fa-twitter"></span></a>
+                                <a href=""><span class="fa-brands fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallary">
+        <div class="container">
+            <div class="gallery-p">
+                <div class="gallery-head">
+                    <h1>Our Gallery</h1>
+                </div>
+                <div class="gallery-grid">
+                    <div class="img">
+                        <img src="Images/gall1 (1).jpg" alt="">
+                        <div class="text">
+                            <p>Mount Everest</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/gall1 (2).jpg" alt="">
+                        <div class="text">
+                            <p>Singapore</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/gall1 (3).jpg" alt="">
+                        <div class="text">
+                            <p>Bali</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/gall1 (4).jpg" alt="">
+                        <div class="text">
+                            <p>Thailand</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/gall1 (5).jpg" alt="">
+                        <div class="text">
+                            <p>Norway</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/gall1 (6).jpg" alt="">
+                        <div class="text">
+                            <p>Istambul</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/gall1 (7).jpg" alt="">
+                        <div class="text">
+                            <p>Sentorini</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="Images/gall1 (8).jpg" alt="">
+                        <div class="text">
+                            <p>Monaco</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="video-p">
+            <div class="video-main">
+                <div class="vid">
+                    <video autoplay loop muted>
+                        <source src="video/videoplayback (2).mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text">
+                    <h1>Adventurous Engage In Daring Or Risky Activity. <br> Let's Adventure Begins.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati totam animi
+                        nesciunt ipsum, deserunt, inventore voluptate, sed culpa assumenda nulla earum veritatis dolor
+                        commodi omnis? Quod odio sint aliquam!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="uptour" id="tours">
+        <div class="container">
+            <div class="uptour-p">
+                <div class="uptour-main">
+                    <div class="uptour-head">
+                        <h1>Upcoming Tours</h1>
+                    </div>
+                    <div class="uptour-grid">
+                        <div class="text1">
+                            <div class="img1"></div>
+                            <div class="text">
+                                <h4>Buddha Paste</h4>
+                                <p>Starting at &#8377 1Lakh</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img2"></div>
+                            <div class="text">
+                                <h4>Thailand</h4>
+                                <p>Starting at &#8377 1Lakh</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img3"></div>
+                            <div class="text">
+                                <h4>Dubai</h4>
+                                <p>Starting at &#8377 60K</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img4"></div>
+                            <div class="text">
+                                <h4>Lakshadweep</h4>
+                                <p>Starting at &#8377 60K</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img5"></div>
+                            <div class="text">
+                                <h4>Venice</h4>
+                                <p>Starting at &#8377 1.5Lakh</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img6"></div>
+                            <div class="text">
+                                <h4>Kedarnath</h4>
+                                <p>Starting at &#8377 25K</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img7"></div>
+                            <div class="text">
+                                <h4>Leh Ladakh</h4>
+                                <p>Starting at &#8377 50K</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img8"></div>
+                            <div class="text">
+                                <h4>Munnar</h4>
+                                <p>Starting at &#8377 30K</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img9"></div>
+                            <div class="text">
+                                <h4>Arunachal Pradesh</h4>
+                                <p>Starting at &#8377 20K</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                        <div class="text1">
+                            <div class="img10"></div>
+                            <div class="text">
+                                <h4>Rajasthan</h4>
+                                <p>Starting at &#8377 20K</p>
+                                <button>Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-p">
+            <div class="contact-head">
+                <h1>Get In Touch</h1>
+            </div>
+            <div class="contact-position">
+                <div class="iframe1">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14884.543419908392!2d72.7596652!3d21.1469911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d80f5d96493%3A0x5f79790a213bd724!2sLuxuria%20Business%20Hub!5e0!3m2!1sen!2sin!4v1677219862262!5m2!1sen!2sin"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="form">
+                    <h3>Contacts</h3>
+                    <p>We want to hear from you</p>
+                    <table>
+                        <form action="" method="post">
+                            <tr>
+                                <td><input type="text" placeholder="Name" required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="email" placeholder="Email"></td>
+                            </tr>
+                            <tr>
+                                <td><textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit">Send Now</button></td>
+                            </tr>
+                        </form>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-p">
+                <div class="footer-grid">
+                    <div class="logo">
+                        <p class="p1">Thrillyaari</p>
+                        <p>All rights reserved. &copy;2023 Thrillyaari</p>
+                    </div>
+                    <div class="aboutus">
+                        <ol>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#gallary">Gallery</a></li>
+                            <li><a href="#tours">Upcoming Tours</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

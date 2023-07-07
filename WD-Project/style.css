@@ -1,0 +1,878 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+
+/* common css which is apply on whole page */
+a {
+    text-decoration: none;
+}
+
+ol {
+    list-style: none;
+}
+
+.container {
+    margin: 0px 100px;
+}
+body{
+    transition: 0.3s all linear;
+}
+
+/* ===================== header =================== */
+.header {
+    /* background-color: deeppink; */
+    position: fixed;
+    z-index: 222;
+    width: 100%;
+    top: 0;
+    transition: 0.3s all linear;
+    /* background-color: rgba(0, 0, 0, 0.337) ; */
+}
+
+.header .header-p {
+    padding: 20px 0px;
+}
+
+.header .navigation {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header .navigation .logo {
+    flex: 0.5;
+
+}
+
+.header .navigation .logo a {
+    color: pink;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.header .navigation .nav {
+    flex: 1;
+}
+
+.header .navigation .nav ol {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .navigation .nav ol li a {
+    color: rgb(255, 225, 230);
+    text-shadow: 0px 0px 1px black;
+    transition: 0.5s all linear;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.header .navigation .nav ol li a:hover {
+    color: pink;
+}
+
+.header .navigation .nav ol .up-menu {
+    position: relative;
+}
+
+.header .navigation .nav ol .up-menu .inner-menu {
+    position: absolute;
+    display: none;
+    background-color: black;
+    border: 1px solid rgb(255, 225, 230);
+}
+
+.header .navigation .nav ol .up-menu:hover .inner-menu {
+    display: block;
+}
+
+.header .navigation .nav ol .up-menu:hover .inner-menu li {
+    padding: 5px;
+}
+
+.header .navigation .nav ol .up-menu .inner-menu .div1::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: rgb(255, 225, 230);
+    display: block;
+}
+
+.header .navigation .nav ol .up-menu span {
+    color: rgb(255, 225, 230);
+    text-shadow: 0px 0px 1px black;
+    font-size: 13px;
+    transition: 0.5s all linear;
+}
+
+.header .navigation .nav ol .up-menu:hover span {
+    transform: rotateX(180deg);
+    color: pink;
+}
+
+.header .navigation .symbol {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.header .navigation .symbol a span {
+    color: rgb(255, 225, 230);
+    text-shadow: 0px 0px 1px black;
+    font-size: 20px;
+    transition: 0.5s all linear;
+    font-weight: 600;
+
+}
+
+.header .navigation .symbol a span:hover {
+    color: pink;
+}
+
+.header .navigation .bar {
+    display: none;
+    flex: 0.2;
+    justify-content: end;
+}
+
+.header .navigation .bar button {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 2px solid solid;
+    background-color: pink;
+    color: black;
+    font-size: 20px;
+    position: relative;
+
+}
+
+
+.header .navigation .moon{
+    flex: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.header .navigation .moon span{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    background-color: deeppink;
+    border-radius: 50%;
+}
+
+/* ======================= dark-mode =====================  */
+.dark-mode{
+    background-color: black;
+    color: white;
+    transition: 0.3s all linear;
+}
+
+/* ======================= open_menu ===================== */
+.header .navigation .open_menu{
+    background-color: deeppink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+}
+.header .navigation .open_menu ol{
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ========================== header-fix ======================== */
+.header-fix{
+    position: fixed;
+    z-index: 222;
+    width: 100%;
+    top: 0;
+    background-color: black;
+}
+
+/* ======================= hero =========================== */
+.bxslider .home::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.199);
+    z-index: -1;
+    display: block;
+}
+.bxslider .home-text1{
+    background-image: url(Images/h2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.bxslider .home-text2{
+    background-image: url(Images/h1\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.bxslider .home-text3{
+    background-image: url(Images/h1\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.bxslider .home-text4{
+    background-image: url(Images/h1\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.bxslider .home-p {
+    padding: 400px 0px;
+}
+
+.bxslider .home .p1 {
+    font-size: 40px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    text-shadow: 0px 0px 3px black;
+}
+
+.bxslider .home .p2 {
+    text-align: center;
+    color: white;
+    width: 50%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 2px black;
+
+}
+.bx-wrapper{
+    border: none !important;
+}
+
+/* ========================= about ========================== */
+.about .about-p {
+    padding: 50px 0px;
+}
+
+.about .about-text .para {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgb(218, 140, 166);
+    text-transform: capitalize;
+    text-shadow: 0px 0px 2px black;
+
+}
+
+
+.about .about-flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.about .about-flex .img {
+    width: 100%;
+    height: 400px;
+}
+
+
+.about .about-flex .img .slider {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about .about-flex .img .slider li {
+    width: 25%;
+    height: 100%;
+    transition: 0.5s all ease;
+}
+
+.about .about-flex .img .slider .slide1 {
+    background-image: url(Images/int\ \(1\).jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+.about .about-flex .img .slider .slide2 {
+    background-image: url(Images/int\ \(2\).jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+.about .about-flex .img .slider .slide3 {
+    background-image: url(Images/int\ \(3\).jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+.about .about-flex .img .slider .slide4 {
+    background-image: url(Images/nat2.jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+.about .about-flex .img .slider li:hover {
+    width: 60%;
+    cursor: pointer;
+}
+
+.about .about-flex .text h1 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: pink;
+    text-shadow: 0px 0px 2px black;
+}
+
+.about .about-flex .text .p1 {
+    line-height: 28px;
+    text-align: justify;
+    padding-bottom: 30px;
+    color: rgb(148, 123, 126);
+}
+
+.about .about-flex .text .p2 span {
+    padding: 0px 20px 20px 0px;
+    color: rgb(148, 123, 126);
+
+}
+
+.about .about-flex .text .p2 {
+    color: rgb(148, 123, 126);
+    text-transform: capitalize;
+}
+
+/* ============================== Team ================================ */
+.team .team-p {
+    padding: 50px 0px;
+}
+
+.team .team-head h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: rgb(218, 140, 166);
+    text-transform: capitalize;
+    text-shadow: 0px 0px 2px black;
+
+
+}
+
+.team .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.team .team-grid .img {
+    height: auto;
+    width: 100%;
+    clip-path: circle(180px at center);
+    transition: 0.5s all ease;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.team .team-grid:hover .img {
+    clip-path: circle(500px at center);
+    box-shadow: 0px 0px 10px black;
+    filter: grayscale(0%);
+}
+
+.team .team-grid .img img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    transition: 0.5s all linear;
+}
+
+.team .team-grid .img:hover img {
+    transform: scale(1.1);
+}
+
+.team .team-grid .img .text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.267);
+    color: white;
+    height: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s all linear;
+}
+
+.team .team-grid .img:hover .text {
+    height: 100%;
+}
+
+.team .team-grid .img .text .p1 {
+    font-size: 25px;
+    text-shadow: 0px 0px 5px black;
+    color: pink;
+}
+
+.team .team-grid .img .text .p2 {
+    text-shadow: 0px 0px 5px black;
+    color: seashell;
+}
+
+.team .team-grid .img .text .a a span {
+    letter-spacing: 10px;
+    color: seashell;
+    transition: 0.5s;
+}
+
+.team .team-grid .img .text .a a span:hover {
+    color: pink;
+}
+
+/* =================================== Gallery ======================================== */
+.gallery .gallery-p {
+    padding: 50px 0px;
+}
+
+.gallery .gallery-p .gallery-head h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: rgb(218, 140, 166);
+    text-transform: capitalize;
+    text-shadow: 0px 0px 2px black;
+}
+
+.gallery .gallery-p .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.gallery .gallery-p .gallery-grid .img {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.gallery .gallery-p .gallery-grid .img img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    transition: 0.5s all linear;
+    cursor: pointer;
+}
+
+.gallery .gallery-p .gallery-grid .img:hover img {
+    transform: scale(1.1);
+}
+
+.gallery .gallery-p .gallery-grid .img .text {
+    position: absolute;
+    top: 0;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    width: 100%;
+    height: 0;
+    display: grid;
+    place-content: center;
+    /* transform: scale(0); */
+    transition: 0.5s all linear;
+    overflow: hidden;
+}
+
+.gallery .gallery-p .gallery-grid .img:hover .text {
+    /* transform: scale(1); */
+    height: 20%;
+}
+
+.gallery .gallery-p .gallery-grid .img .text p {
+    font-size: 20px;
+}
+
+/* ==================================== video ======================================= */
+.video .video-p {
+    padding: 50px 0px;
+}
+
+.video .video-main {
+    position: relative;
+}
+
+.video .video-main .vid {
+    height: 500px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.video .video-main .text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-align: center;
+}
+
+.video .video-main .text h1 {
+    padding-bottom: 20px;
+    font-size: 35px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.video .video-main .text p {
+    padding: 0px 400px;
+}
+
+/* =================================== upcoming tour ========================================= */
+.uptour .uptour-p {
+    padding: 50px 0px;
+}
+
+.uptour .uptour-main .uptour-head h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: rgb(218, 140, 166);
+    text-transform: capitalize;
+    text-shadow: 0px 0px 2px black;
+}
+
+.uptour .uptour-main .uptour-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.uptour .uptour-main .uptour-grid .text1 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.uptour .uptour-main .uptour-grid .text1 .img1 {
+    background-image: url(Images/buda\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img1 {
+    background-image: url(Images/buda\ \(2\).jpg);
+    transform: scale(1.1);
+    border-radius: 5px;
+
+}
+
+.uptour .uptour-main .uptour-grid .text1 .img2 {
+    background-image: url(Images/thai\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img2 {
+    background-image: url(Images/thai\ \(1\).jpg);
+    transform: scale(1.1);
+    border-radius: 5px;
+
+}
+
+
+.uptour .uptour-main .uptour-grid .text1 .img3 {
+    background-image: url(Images/dubao\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img3 {
+    background-image: url(Images/dubao\ \(2\).jpg);
+    transform: scale(1.1);
+    border-radius: 5px;
+
+}
+
+
+.uptour .uptour-main .uptour-grid .text1 .img4 {
+    background-image: url(Images/lakshya.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img4 {
+    background-image: url(Images/lakshya\ \(1\).jpg);
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.uptour .uptour-main .uptour-grid .text1 .img5 {
+    background-image: url(Images/venic\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img5 {
+    background-image: url(Images/venic\ \(2\).jpg);
+    transform: scale(1.1);
+}
+
+.uptour .uptour-main .uptour-grid .text1 .img6 {
+    background-image: url(Images/kedarnath\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img6 {
+    background-image: url(Images/kedarnath\ \(3\).jpg);
+    transform: scale(1.1);
+}
+
+.uptour .uptour-main .uptour-grid .text1 .img7 {
+    background-image: url(Images/leh\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img7 {
+    background-image: url(Images/leh\ \(1\).jpg);
+    transform: scale(1.1);
+}
+
+.uptour .uptour-main .uptour-grid .text1 .img8 {
+    background-image: url(Images/munnar\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img8 {
+    background-image: url(Images/munnar\ \(1\).jpg);
+    transform: scale(1.1);
+}
+
+.uptour .uptour-main .uptour-grid .text1 .img9 {
+    background-image: url(Images/aruna\ chal\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img9 {
+    background-image: url(Images/aruna\ chal\ \(1\).jpg);
+    transform: scale(1.1);
+}
+
+.uptour .uptour-main .uptour-grid .text1 .img10 {
+    background-image: url(Images/rajasthan\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    max-width: 100%;
+    transition: 0.5s all ease;
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .img10 {
+    background-image: url(Images/rajasthan\ \(1\).jpg);
+    transform: scale(1.1);
+}
+
+.uptour .uptour-main .uptour-grid .text1 .text {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.267);
+    color: white;
+    height: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s all linear;
+
+}
+
+.uptour .uptour-main .uptour-grid .text1:hover .text {
+    height: 30%;
+}
+
+.uptour .uptour-main .uptour-grid .text1 .text h4 {
+    text-shadow: 0px 0px 5px black;
+}
+
+.uptour .uptour-main .uptour-grid .text1 .text p {
+    text-shadow: 0px 0px 2px black;
+    padding-bottom: 10px;
+}
+
+.uptour .uptour-main .uptour-grid .text1 .text button {
+    height: 40px;
+    width: 120px;
+    background-color: pink;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.5s all linear;
+}
+
+.uptour .uptour-main .uptour-grid .text1 .text button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* ================================= contact ======================================== */
+.contact .contact-p {
+    padding: 70px 0px 0px 0px;
+}
+
+.contact .contact-head h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: rgb(218, 140, 166);
+    text-transform: capitalize;
+    text-shadow: 0px 0px 2px black;
+}
+
+.contact .contact-position {
+    position: relative;
+}
+
+.contact .contact-position .form {
+    background-color: rgb(253, 250, 251);
+    width: 20%;
+    padding: 50px 50px 20px 50px;
+    position: absolute;
+    top: 190px;
+    right: 250px;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+.contact .contact-position .form h3 {
+    font-size: 25px;
+}
+
+.contact .contact-position .form p {
+    padding-bottom: 10px;
+}
+
+.contact .contact-position .form table tr td {
+    padding: 5px 0px;
+}
+
+.contact .contact-position .form table tr td input, textarea {
+    padding: 5px;
+    width: 210px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.158);
+    box-shadow: 0px 0px 2px black;
+}
+
+.contact .contact-position .form button {
+    height: 40px;
+    width: 120px;
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 2px 2px 0px rgba(255, 192, 203, 0.925),
+    4px 4px 0px rgba(255, 192, 203, 0.877),
+    6px 6px 0px rgba(255, 192, 203, 0.808),
+    8px 8px 0px rgba(255, 192, 203, 0.767),
+    10px 10px 0px rgba(255, 192, 203, 0.699),
+    12px 12px 0px rgba(255, 192, 203, 0.623),
+    14px 14px 0px rgba(255, 192, 203, 0.514),
+    16px 16px 0px rgba(255, 192, 203, 0.384),
+    18px 18px 0px rgba(255, 192, 203, 0.055);
+    border: 1px solid bla;
+    transition: 0.5s all ease;
+}
+.contact .contact-position .form button:hover{
+    box-shadow: none;
+}
+
+/* ============================= footer ================================= */
+.footer{
+    background-color: rgba(226, 162, 183, 0.697);
+}
+.footer .footer-p{
+    padding: 50px 0px;
+}
+.footer .footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.footer .footer-grid .logo .p1{
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.footer .footer-grid .aboutus ol li a{
+    transition: 0.5s all ease;
+    color: black;
+}
+.footer .footer-grid .aboutus ol li a:hover{
+    color: white;
+}

@@ -1,0 +1,126 @@
+@media (min-width: 576px) {
+    .container{
+        margin: 0px 40px;
+    }
+    .header .navigation .logo{
+        flex: 1;
+        
+    }
+    .header .navigation .logo a{
+        color: pink;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .header .navigation .nav{
+        flex: 1;
+        display: none;
+    }
+    .header .navigation .symbol{
+        flex: 0.5;
+        display: none;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+    .header .navigation .bar{
+        display: block;
+        flex: 0.1;
+        justify-content: end;
+        align-items: center;
+    }
+    .header .navigation .open_menu{
+        display: block;
+    }
+
+        /* ======================= hero =========================== */
+        .bxslider .home .p1{
+            width: 100%;
+        }
+        .bxslider .home .p2{
+            width: 100%;
+        }
+
+/* ========================= about ========================== */
+.about .about-text .para {
+    font-size: 40px;
+}
+
+
+.about .about-flex {
+    flex-direction: column;
+}
+
+/* ============================== Team ================================ */ 
+.team .team-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.team .team-grid .img{
+    clip-path: circle(900px at center);
+    box-shadow: 0px 0px 10px black;
+}
+
+.team .team-grid .img:hover{
+    clip-path: circle(900px at center);
+    box-shadow: 0px 0px 10px black;
+}
+
+/* =================================== Gallery ======================================== */
+.gallery .gallery-p .gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+/* ==================================== video ======================================= */
+
+.video .video-main .text h1{
+    font-size: 25px;
+    text-shadow: 0px 0px 5px black;
+    padding: 0px 50px 20px 50px;
+}
+.video .video-main .text p{
+    padding: 0px 80px;
+    font-size: 12px;
+}
+
+/* ===================================Upcoming Events ================================= */
+.uptour .uptour-main .uptour-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* ====================================== contact ========================================== */
+
+.contact .contact-p {
+    padding: 70px 0px 50px 0px;
+}
+.contact .contact-position .iframe1{
+    padding-bottom: 50px;
+}
+
+.contact .contact-position {
+    position: static;
+}
+
+.contact .contact-position .form {
+    width: 50%;
+    margin: auto;
+    position: static;
+}
+
+/* ---------------- footer -----------------  */
+.footer .footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer .footer-grid .logo .p1{
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+}

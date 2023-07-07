@@ -1,0 +1,127 @@
+@media (min-width: 992px){
+    .container{
+        margin: 0px 40px;
+    }
+    .header .navigation .logo{
+        flex: 0.5;
+        
+    }
+    .header .navigation .logo a{
+        color: pink;
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    .header .navigation .nav{
+        flex: 1.3;
+        display: block;
+    }
+    .header .navigation .symbol{
+        flex: 0.3;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+    .header .navigation .bar{
+        display: none;
+
+    }
+    .header .navigation .open_menu{
+        display: none;
+    }
+     /* ======================= hero =========================== */
+
+     .home-img .home-p {
+        padding: 250px 0px;
+    }
+
+    .home-img .home-text .p1 {
+        font-size: 35px;
+        width: 50%;
+    }
+
+    .home-img .home-text .p2 {
+        font-size: 18px;
+        width: 50%;
+    }
+
+    /* ========================= about ========================== */
+.about .about-text .para {
+    font-size: 40px;
+}
+
+
+.about .about-flex {
+    flex-direction: row;
+}
+
+/* ============================== Team ================================ */ 
+.team .team-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.team .team-grid .img{
+    clip-path: circle(900px at center);
+    box-shadow: 0px 0px 10px black;
+}
+
+.team .team-grid .img:hover{
+    clip-path: circle(900px at center);
+    box-shadow: 0px 0px 10px black;
+}
+
+/* =================================== Gallery ======================================== */
+.gallery .gallery-p .gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+/* ==================================== video ======================================= */
+
+.video .video-main .text h1{
+    font-size: 35px;
+    text-shadow: 0px 0px 5px black;
+    padding: 0px 50px 20px 50px;
+}
+.video .video-main .text p{
+    padding: 0px 150px;
+    font-size: 15px;
+}
+
+/* ===================================Upcoming Events ================================= */
+.uptour .uptour-main .uptour-grid{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/* ====================================== contact ========================================== */
+.contact .contact-position {
+    position: relative;
+}
+
+.contact .contact-position .form {
+    background-color: rgb(253, 250, 251);
+    width: 35%;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+/* ---------------- footer -----------------  */
+.footer .footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.footer .footer-grid .logo .p1{
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+}
