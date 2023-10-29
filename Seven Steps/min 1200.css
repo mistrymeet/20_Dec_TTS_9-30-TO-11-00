@@ -1,0 +1,83 @@
+@media (min-width: 1200px) {
+    /* =============== header ================ */
+
+    .container{
+        margin: 0px 100px;
+    }
+    .header .header-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .header-flex .logo{
+        flex: 0.9;
+    }
+    .header .header-flex .menu{
+        flex: 2;
+    }
+    .header .header-flex .menu ol li a{
+        font-size: 18px;
+    }
+
+
+     /* ================== about ================== */
+     .about .about-flex{
+        flex-direction: row;
+    }
+    .about .about-flex .img .slider li:hover{
+        width: 120%;
+    }
+    .about .about-flex .text p{
+        font-size: 19px;
+    }
+    .about .about-flex .text .p1, .p2{
+        padding-bottom: 20px;
+    }
+
+
+    /* ==================================== gallary =========================================== */
+    .gallary-img .gallary-grid{
+        grid-template-columns: repeat(5,auto);
+}
+
+/* ==================================== team ============================================== */
+.team .team-grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+.team .team-grid .main1 .name{
+    top: 250px;
+}
+.team .team-grid .main1:hover .name{
+    transform: translateX(220px);
+}
+
+.team .team-grid .main1 .symbol{
+    position: absolute;
+    top: 300px;
+}
+.team .team-grid .main1:hover .symbol{
+    transform: translateX(220px);
+
+} 
+
+
+/* ================ contact ================ */
+.contact .contact-flex{
+    flex-direction: row;
+}
+.contact .contact-flex .grid{
+    grid-template-columns: repeat(2,auto);
+}
+.contact .contact-flex .flex form{
+    gap: 40px;
+}
+.contact .contact-flex .flex form input{
+    width: 400px;
+}
+.contact .contact-flex .flex form textarea{
+    width: 400px;
+}
+.contact .contact-flex .flex form button{
+    width: 400px;
+}
+}

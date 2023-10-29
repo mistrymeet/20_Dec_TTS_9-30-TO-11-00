@@ -1,0 +1,145 @@
+@media (min-width: 768px) {
+        /* =============== header ================ */
+
+        .container{
+            margin: 0px 50px;
+        }
+        .header .header-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header .header-flex .logo a{
+            font-size: 25px;
+        }
+        .header .header-flex .logo{
+            flex: 1;
+        }
+        .header .header-flex .menu{
+            flex: 0;
+        }
+        .header .header-flex .menu ol{
+            display: none;
+        }
+        
+        .header .header-flex .bar{
+            display: block;
+            transition: 0.5s all linear;
+        }
+        .header .header-flex .bar span:hover{
+            color: gold;
+        }
+        .header .header-flex .show_menu{
+            background-color: rgba(0, 0, 0, 0.432);  
+            position: absolute; 
+            top: 0;
+            right: 0;
+            height: auto;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+        }
+        .header .header-flex .show_menu ol{
+            flex-direction: column;
+            display: flex;
+        }
+
+        /* ================ homeimg ================ */
+        .homeimg .text .p1{
+            font-size: 45px;
+        }
+        .homeimg .text .p2{
+            width: 80%;
+            font-size: 21px;
+        }
+
+
+        /* ================== about ================== */
+        .about .about-flex{
+            flex-direction: column;
+        }
+        .about .about-flex .img .slider li:hover{
+            width: 50%;
+        }
+        .about .about-flex .text p{
+            font-size: 19px;
+        }
+        .about .about-flex .text .p1, .p2{
+            padding-bottom: 20px;
+        }
+
+        /* =================== service ================= */
+        .service .service-grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        /* ==================================== wedding ========================================== */
+        .wedding .wedding-flex{
+            flex-direction: row;
+        }
+
+        /* ==================================== gallary =========================================== */
+        .gallary-img .gallary-grid{
+            grid-template-columns: repeat(3,auto);
+        }
+
+        /* ==================================== team ============================================== */
+.team .team-grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+.team .team-grid .main1 .name{
+    top: 250px;
+}
+.team .team-grid .main1:hover .name{
+    transform: translateX(220px);
+}
+
+.team .team-grid .main1 .symbol{
+    position: absolute;
+    top: 300px;
+}
+.team .team-grid .main1:hover .symbol{
+    transform: translateX(220px);
+
+} 
+
+/* ================ contact ================ */
+.contact .contact-flex{
+    flex-direction: column;
+}
+.contact .contact-flex .grid{
+    grid-template-columns: repeat(2,auto);
+}
+.contact .contact-flex .flex form{
+    gap: 40px;
+}
+.contact .contact-flex .flex form input{
+    width: 500px;
+}
+.contact .contact-flex .flex form textarea{
+    width: 500px;
+}
+.contact .contact-flex .flex form button{
+    width: 500px;
+}
+
+/* ===================== footer ===================== */
+.footer .footer-flex{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 100px;
+}
+.footer .footer-flex .head{
+    text-align: center;
+}
+.footer .footer-flex .link{
+    text-align: center;
+}
+.footer .footer-flex .cont{
+    text-align: center;
+}
+.footer .footer-flex .wed{
+    text-align: center;
+}
+}

@@ -1,0 +1,777 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ol{
+    list-style: none;
+}
+.container{
+    margin: 0px 100px;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 217, 0, 0.801);
+}
+body{
+    transition: 0.3s all linear;
+}
+
+/* =============== header ================ */
+.header{
+    /* background-color: black; */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: 0.5s all linear;
+}
+.header .header-p{
+    padding: 20px 0px;
+}
+.header .header-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-flex .logo{
+    flex: 1;
+}
+.header .header-flex .logo a{
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.header .header-flex .menu{
+    flex: 2;
+}
+.header .header-flex .menu ol{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.header .header-flex .menu ol .close_btn span{
+    color: white;
+}
+.header .header-flex .menu ol .close_btn span:hover{
+    color: gold;
+}
+.header .header-flex .menu ol li{
+    background-color: transparent;
+}
+.header .header-flex .menu ol li a{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.5s all linear;
+}
+.header .header-flex .menu ol li a:hover{
+    color: gold;
+}
+.header .header-flex .menu ol .wed-menu{
+    position: relative;
+}
+.header .header-flex .menu ol .wed-menu span{
+    color: white;
+    transition: 0.5s all linear;
+}
+.header .header-flex .menu ol .wed-menu:hover span{
+    color: gold;
+    transform: rotateX(180deg);
+}
+.header .header-flex .menu ol .wed-menu .inner-menu{
+    position: absolute;
+    display: none;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: grey;
+}
+.header .header-flex .menu ol .wed-menu .inner-menu li a{
+    color: black;
+    font-size: 15px;
+    transition: 0.5s all linear;
+}
+.header .header-flex .menu ol .wed-menu .inner-menu li a:hover{
+    color: rgb(253, 236, 137);
+}
+.header .header-flex .menu ol .wed-menu .inner-menu .div{
+    padding: 2px 0px;
+}
+.header .header-flex .menu ol .wed-menu .inner-menu .div::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+}
+.header .header-flex .menu ol .wed-menu:hover .inner-menu{
+    display: block;
+}
+.header .header-flex .theme{
+    flex: 0.2;
+    display: flex;
+    justify-content: end;
+}
+.header .header-flex .theme span{
+    font-size: 25px;
+    cursor: pointer;
+    text-shadow: 0px 0px 2px black;
+}
+.header .header-flex .bar{
+    display: none;
+}
+.header .header-flex .bar button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid gold;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all linear;
+    position: relative;
+    z-index: 0;
+}
+.header .header-flex .bar button:hover{
+    color: gold;
+    border-color: white;
+}
+
+/*========== dark-mode ========= */
+.dark-mode{
+    background-color: black;
+    color: white;
+    transition: 0.3s all linear;
+}
+
+/* ============ scroll css =============== */
+.display{
+    background-color: goldenrod;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: 1s all linear;
+    box-shadow: 0px 0px 3px black;
+}
+
+/* ================ homeimg ================ */
+.homeimg .text1{
+    background: url(image/home.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    /* height: 700px; */
+}
+.homeimg .text2{
+    background: url(image/home3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    /* height: 700px; */
+
+}
+.homeimg .text3{
+    background: url(image/home4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    /* height: 700px; */
+
+}
+.homeimg .text4{
+    background: url(image/home5.678);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    /* height: 700px; */
+
+}
+.homeimg .text::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+    display: block;
+    z-index: -1;
+}
+
+.homeimg .text-p{
+    padding: 350px 0px;
+}
+.homeimg .text .p1{
+    font-size: 50px;
+    color: gold;
+    text-shadow: 0px 0px 5px black;
+}
+.homeimg .text .p2{
+    width: 50%;
+    color:  white;
+    font-size: 22px;
+    text-align: justify;
+    text-shadow: 0px 0px 2px black;
+}
+
+/* ================== about ==================== */
+.about .about-p{
+    padding: 50px 0px;
+}
+.about .about-h h1{
+    text-align: center;
+    color: gold;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 3px black;
+}
+.about .about-flex{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.about .about-flex .img{
+    /* flex: 1; */
+    height: 400px;
+    width: 100%;
+}
+.about .about-flex .img .slider{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.about .about-flex .img .slider .slide1{
+    background: url(image/pre\ wed.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.about .about-flex .img .slider .slide2{
+    background: url(image/mahendi.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.about .about-flex .img .slider .slide3{
+    background: url(image/tradition.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.about .about-flex .img .slider .slide4{
+    background: url(image/haldi.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.about .about-flex .img .slider .slide5{
+    background: url(image/pexels-sangeet-rao-12759518.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.about .about-flex .img .slider .slide6{
+    background: url(image/phera.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.about .about-flex .img .slider li{
+    width: 16.66%;
+    height: 100%;
+    transition: 0.5s all linear;
+}
+.about .about-flex .img .slider li:hover{
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+}
+
+.about .about-flex .text p{
+    font-size: 19px;
+    text-align: justify;
+}
+.about .about-flex .text .p1, .p2{
+    padding-bottom: 20px;
+}
+
+
+/* ==================================== services ========================================= */
+.service .service-p{
+    padding: 50px 0px;
+}
+.service .service-p .service-h h1{
+    text-align: center;
+    color: gold;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 3px black;
+}
+.service .service-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.service .service-grid .grid1{
+    box-shadow: 0px 0px 5px black;
+    border-radius: 20px 20px 0px 0px;
+}
+.service .service-grid .grid1 .img{
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service .service-grid .grid1 .img img{
+    height: auto;
+    max-width: 100%;
+    transition: 0.5s all linear;
+    display: block;
+}
+.service .service-grid .grid1:hover .img img{
+    transform: scale(1.1);
+}
+.service .service-grid .grid1 .text .p1{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    color: rgba(255, 217, 0, 0.452);
+    text-shadow: 0px 0px 1px black;
+}
+.service .service-grid .grid1 .text .p2{
+    text-align: justify;
+    padding: 10px 20px 20px 20px;
+}
+
+/* ============================ wedding =============================== */
+.wedding .wedding-p{
+    padding: 50px 0px 100px 0px;
+}
+.wedding .wedding-h h1{
+    text-align: center;
+    color: gold;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 3px black;
+}
+.wedding .wedding-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.wedding .wedding-flex .main1{
+    position: relative;
+    flex: 1;
+}
+.wedding .wedding-flex .main1 .grid1{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+.wedding .wedding-flex .main1 .grid1 .img1 img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+.wedding .wedding-flex .main1 .p{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.3s all linear;
+}
+.wedding .wedding-flex .main1:hover .p{
+    transform: scale(1);
+}
+.wedding .wedding-flex .main1 .p p{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 5px 5px 0px orange,
+    10px 10px 0px red;
+
+}
+.wedding .wedding-flex .main2 .grid2{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+.wedding .wedding-flex .main2 .grid2 .img1 img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+.wedding .wedding-flex .main2{
+    position: relative;
+    flex: 1;
+}
+.wedding .wedding-flex .main2 .p{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.3s all linear;
+}
+.wedding .wedding-flex .main2:hover .p{
+    transform: scale(1);
+}
+.wedding .wedding-flex .main2 .p p{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 5px 5px 0px orange,
+    10px 10px 0px red;
+
+}
+
+/* =================================== gallary ============================================== */
+.gallary-img{
+    background: url(image/g2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.gallary-img .gallary-p{
+    padding: 50px 0px;
+}
+.gallary-img .gallary-h h1{
+    text-align: center;
+    color: gold;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 3px black;
+}
+.gallary-img .gallary-grid{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 30px;
+}
+.gallary-img .gallary-grid .grid1 img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+    filter: sepia(0%);
+    transition: 0.5s all linear;
+    box-shadow: 0px 0px 5px black;
+}
+.gallary-img .gallary-grid .grid1 img:hover{
+    filter: sepia(80%);
+}
+
+/* ====================== team ===================== */
+.team .team-p{
+    padding: 100px 0px 50px 0px;
+}
+.team .team-head h1{
+    text-align: center;
+    color: gold;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 3px black;
+}
+.team .team-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.team .team-grid .main1{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px black;
+}
+.team .team-grid .main1 .img{
+    overflow: hidden;
+}
+.team .team-grid .main1 .img img{
+    height: auto;
+    max-width: 100%;
+    transition: 1s all linear;
+    display: block;
+}
+.team .team-grid .main1 .img img:hover{
+    transform: scale(1.1);
+}
+
+.team .team-grid .main1 .name{
+    position: absolute;
+    top: 500px;
+    left: -200px;
+    background-color: rgba(230, 0, 79, 0.9);
+    padding: 5px 10px;
+    transition: 0.3s all linear;
+    border-radius: 2px;
+
+}
+.team .team-grid .main1:hover .name{
+    transform: translateX(250px);
+}
+.team .team-grid .main1 .name p{
+    font-size: 20px;
+}
+
+.team .team-grid .main1 .symbol{
+    position: absolute;
+    top: 550px;
+    left: -200px;
+    background-color: rgba(230, 0, 79, 0.9);
+    padding: 5px 10px;
+    height: auto;
+    transition: 0.3s all linear;
+    border-radius: 2px;
+    transition-delay: 0.1s;
+}
+.team .team-grid .main1:hover .symbol{
+    transform: translateX(250px);
+
+} 
+
+.team .team-grid .main1 .symbol a span{
+    font-size: 20px;
+    padding: 3px;
+    color: black;
+    transition: 0.5s all ease;
+}
+.team .team-grid .main1 .symbol a span:hover{
+    color: gold;
+}
+
+/* ================ contact ================ */
+.contact{
+    background: url(image/conpag.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+}
+.contact::after{
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.226);
+    z-index: -1;
+    position: absolute;
+}
+.contact .contact-p{
+    padding: 50px 0px;
+}
+.contact .contact-h h1{
+    text-align: center;
+    color: gold;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 3px black;
+}
+.contact .contact-flex{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 50px 0px;
+}
+.contact .contact-flex .grid{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 50px;
+}
+.contact .contact-flex .grid .sym{
+    text-align: center;
+}
+.contact .contact-flex .grid .sym span{
+    font-size: 25px;
+    color: white;
+    padding: 25px;
+    background-color: rgba(230, 0, 79, 0.9);
+    border-radius: 50%;
+    transition: 0.5s all linear;
+    cursor: pointer;
+}
+.contact .contact-flex .grid .sym span:hover{
+    color: rgba(230, 0, 79, 0.9);
+    background-color: white;
+}
+.contact .contact-flex .grid .sym h3{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.contact .contact-flex .grid .sym p{
+    color: white;
+    font-size: 18px;
+}
+
+.contact .contact-flex .flex{
+    flex: 1;
+}
+.contact .contact-flex .flex form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    place-items: center;
+}
+.contact .contact-flex .flex form input{
+    height: 50px;
+    width: 800px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.562);
+    color: black;
+    border: 2px solid white;
+    transition: 0.5s all linear;
+} 
+.contact .contact-flex .flex form input:focus-visible{
+    outline: none;
+}
+.contact .contact-flex .flex form textarea{
+    width: 800px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.692);
+    color: black;
+    border: 2px solid white;
+    transition: 0.5s all linear;
+}
+.contact .contact-flex .flex form textarea:focus-visible{
+    outline: none;
+}
+.contact .contact-flex .flex form button{
+    height: 50px;
+    width: 800px;
+    padding: 10px;
+    background-color: rgba(230, 0, 79, 0.9);
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    transition: 0.5s all linear;
+}
+.contact .contact-flex .flex form button:hover{
+    background-color:  rgba(255, 255, 255, 0.692);
+    color: rgba(230, 0, 79, 0.9);
+    border: 2px solid rgba(230, 0, 79, 0.9);
+}
+
+/* =================== location ======================*/
+.location .location-p{
+    padding: 50px 0px;
+}
+
+
+
+/* ===================== footer ==================== */
+.footer{
+    background-color: rgba(0, 0, 0, 0.61);
+}
+.footer .footer-p{
+    padding: 50px 0px;
+}
+.footer .footer-flex{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 100px;
+}
+.footer .footer-flex .head{
+    flex: 1;
+    text-align: left;
+}
+.footer .footer-flex .head h1{
+    color: white;
+}
+.footer .footer-flex .head p{
+    color: white;
+}
+.footer .footer-flex .link{
+    flex: 0.5;
+    text-align: left;
+}
+.footer .footer-flex .link h4{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.footer .footer-flex .link ol{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer .footer-flex .link ol a{
+    color: white;
+    transition: 0.5s all linear;
+}
+.footer .footer-flex .link ol a:hover{
+    color: gold;
+}
+.footer .footer-flex .cont{
+    flex: 0.5;
+    text-align: left;
+}
+.footer .footer-flex .cont h4{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.footer .footer-flex .cont ol{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+.footer .footer-flex .cont ol a{
+    color: white;
+    transition: 0.5s all linear;
+}
+.footer .footer-flex .cont ol a:hover{
+    color: gold;
+}
+.footer .footer-flex .wed{
+    flex: 1;
+}
+.footer .footer-flex .wed h4{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.footer .footer-flex .wed video{
+    height: auto;
+    max-width: 100%;
+} 
+

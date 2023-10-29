@@ -1,0 +1,41 @@
+@media (min-width: 1400px) {
+    /* ==================================== team ============================================== */
+.team .team-grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+.team .team-grid .main1 .name{
+    top: 400px;
+}
+.team .team-grid .main1:hover .name{
+    transform: translateX(250px);
+}
+
+.team .team-grid .main1 .symbol{
+    position: absolute;
+    top: 450px;
+}
+.team .team-grid .main1:hover .symbol{
+    transform: translateX(250px);
+
+} 
+    
+/* ================ contact ================ */
+.contact .contact-flex{
+    flex-direction: row;
+}
+.contact .contact-flex .grid{
+    grid-template-columns: repeat(2,auto);
+}
+.contact .contact-flex .flex form{
+    gap: 40px;
+}
+.contact .contact-flex .flex form input{
+    width: 600px;
+}
+.contact .contact-flex .flex form textarea{
+    width: 600px;
+}
+.contact .contact-flex .flex form button{
+    width: 600px;
+}
+}

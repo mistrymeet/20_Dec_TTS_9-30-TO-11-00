@@ -1,0 +1,152 @@
+@media (min-width: 992px) {
+     /* =============== header ================ */
+
+     .container{
+        margin: 0px 60px;
+    }
+    .header .header-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .header-flex .logo a{
+        font-size: 25px;
+    }
+    .header .header-flex .logo{
+        flex: 0.3;
+    }
+    .header .header-flex .menu{
+        flex: 1;
+    }
+    .header .header-flex .menu ol{
+        display: flex;
+    }
+    .header .header-flex .menu ol .close_btn{
+        display: none;
+    }
+    .header .header-flex .menu ol li a{
+        font-size: 16px;
+    }
+    .header .header-flex .theme{
+        justify-content: end;
+    }
+    .header .header-flex .bar{
+        display: none;
+        transition: 0.5s all linear;
+    }
+    .header .header-flex .bar span:hover{
+        color: gold;
+    }
+    .header .header-flex .theme{
+        flex: 0.1;
+    }
+    .header .header-flex .show_menu{
+        background-color: rgba(0, 0, 0, 0.432);  
+        position: absolute; 
+        top: 0;
+        right: 0;
+        height: auto;
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+        z-index: 1;
+    }
+    .header .header-flex .show_menu ol{
+        flex-direction: column;
+        display: none;
+    }
+
+
+
+    /* ================ homeimg ================ */
+    .homeimg .text .p1{
+        font-size: 50px;
+    }
+    .homeimg .text .p2{
+        width: 50%;
+        font-size: 22px;
+    }
+
+    /* ================== about ================== */
+    .about .about-flex{
+        flex-direction: column;
+    }
+    .about .about-flex .img .slider li:hover{
+        width: 50%;
+    }
+    .about .about-flex .text p{
+        font-size: 19px;
+    }
+    .about .about-flex .text .p1, .p2{
+        padding-bottom: 20px;
+    }
+
+    /* =================== service ================= */
+    .service .service-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    /* ==================================== gallary =========================================== */
+    .gallary-img .gallary-grid{
+        grid-template-columns: repeat(4,auto);
+}
+
+/* ==================================== team ============================================== */
+.team .team-grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+.team .team-grid .main1 .name{
+    top: 200px;
+}
+.team .team-grid .main1:hover .name{
+    transform: translateX(220px);
+}
+
+.team .team-grid .main1 .symbol{
+    position: absolute;
+    top: 250px;
+}
+.team .team-grid .main1:hover .symbol{
+    transform: translateX(220px);
+
+}
+
+/* ================ contact ================ */
+.contact .contact-flex{
+    flex-direction: column;
+}
+.contact .contact-flex .grid{
+    grid-template-columns: repeat(2,auto);
+}
+.contact .contact-flex .flex form{
+    gap: 50px;
+}
+.contact .contact-flex .flex form input{
+    width: 600px;
+}
+.contact .contact-flex .flex form textarea{
+    width: 600px;
+}
+.contact .contact-flex .flex form button{
+    width: 600px;
+}
+
+/* ===================== footer ===================== */
+.footer .footer-flex{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 100px;
+}
+.footer .footer-flex .head{
+    text-align: left;
+}
+.footer .footer-flex .link{
+    text-align: left;
+}
+.footer .footer-flex .cont{
+    text-align: left;
+}
+.footer .footer-flex .wed{
+    text-align: left;
+}
+}
